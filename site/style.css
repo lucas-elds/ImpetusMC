@@ -7,13 +7,13 @@
   color: #ffffff;
   background-color: #000000;
   font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1vw;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 1vw 3vw;
 }
 
 #brasao {
@@ -60,8 +60,9 @@
 .contador_valor {
   font-size: 7vw;
   color: #000000;
-  text-shadow: 2px 0 #e3e3e3, -2px 0 #e3e3e3, 0 2px #e3e3e3, 0 -2px #e3e3e3,
-    1px 1px #e3e3e3, -1px -1px #e3e3e3, 1px -1px #e3e3e3, -1px 1px #e3e3e3;
+  text-shadow: 0.14vw 0 #e3e3e3, -0.14vw 0 #e3e3e3, 0 0.14vw #e3e3e3,
+    0 -0.14vw #e3e3e3, 0.07vw 0.07vw #e3e3e3, -0.07vw -0.07vw #e3e3e3,
+    0.07vw -0.07vw #e3e3e3, -0.07vw 0.07vw #e3e3e3;
 }
 
 .linha-vertical {
