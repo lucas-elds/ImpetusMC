@@ -1,103 +1,88 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Teko', sans-serif;
-    color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-    background-color: #000000;
-    text-align: center;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    background-image: url("img/background.png");
-    background-color: #000000;
-    background-size: 100% 100%;
-    text-align: center;
+#navbar {
+  color: #ffffff;
+  background-color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
 }
 
 #brasao {
-    width: 300px;
-    margin: 3rem;
+  width: 12vw;
 }
 
-#titulo {
-    padding-bottom: 4rem;
+#navbar_itens {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
 }
 
-#contatos {
-    background-color: #424242;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: center;
-    padding-bottom: 1rem;
+#nav_contador,
+#nav_menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
 }
 
-.estado {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding-top: 1rem;
-    font-size: 1.3rem;
+#nav_contador li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 1vw;
 }
 
-.estado img {
-    width: 50px;
+#nav_contador h1 {
+  font-size: 2vw;
 }
 
-.divisoes {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
+.contador_titulo {
+  font-size: 1.5vw;
+  margin-bottom: -1vw;
 }
 
-.cidade {
-    background-color: #000000;
-    width: 100%;
-    text-align: center;
-    border: 1px solid #424242;
-    padding: 0.5rem;
-    font-size: 1.2rem;
-    text-decoration: none;
-    transition: 0.5s;
+.contador_valor {
+  font-size: 7vw;
+  color: #000000;
+  text-shadow: 2px 0 #e3e3e3, -2px 0 #e3e3e3, 0 2px #e3e3e3, 0 -2px #e3e3e3,
+    1px 1px #e3e3e3, -1px -1px #e3e3e3, 1px -1px #e3e3e3, -1px 1px #e3e3e3;
 }
 
-.cidade:hover {
-    background-color: #151515;
-    border: 1px solid #ffffff;
-    text-decoration: underline;
-    transition: 0.5s;
+.linha-vertical {
+  color: #444444;
+  height: 8vw;
+  border-left: 2px solid;
+  margin-top: -1vw;
 }
 
-footer {
-    padding: 1rem;
+.item_menu {
+  padding: 0.3rem 0.8rem;
+  font-size: 1.7vw;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
 }
 
-footer ul {
-    list-style-type: none;
-    font-size: 1rem;
+.item_menu:hover {
+  border-radius: 5rem;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: underline;
+  transition: 0.5s;
 }
-
-/* width: maior que 768px */
-@media only screen and (min-width: 768px) {
-    .divisoes {
-        flex-direction: row;
-    }
-  }
