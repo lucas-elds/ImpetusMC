@@ -50,17 +50,49 @@
             </li>
           </ul>
           <ul id="nav_menu">
-            <li><a class="item_menu" href="#sobre">IMPETUS</a></li>
-            <li><a class="item_menu" href="#historia">HISTÓRIA</a></li>
-            <li><a class="item_menu" href="#comando">COMANDO</a></li>
-            <li><a class="item_menu" href="#divisao">DIVISÕES</a></li>
-            <li><a class="item_menu" href="#galeria">GALERIA</a></li>
-            <li><a class="item_menu" href="#contato">CONTATO</a></li>
+            <img
+              id="brasao_nav"
+              src="/img/brasao.png"
+              alt="Brasão Impetus MC"
+            />
+            <div id="itens_menu">
+              <li><a class="item_menu" href="#sobre">IMPETUS</a></li>
+              <li><a class="item_menu" href="#historia">HISTÓRIA</a></li>
+              <li><a class="item_menu" href="#comando">COMANDO</a></li>
+              <li><a class="item_menu" href="#divisao">DIVISÕES</a></li>
+              <li><a class="item_menu" href="#galeria">GALERIA</a></li>
+              <li><a class="item_menu" href="#contato">CONTATO</a></li>
+            </div>
           </ul>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section id="topo">
+        <img src="img/brasao.png" alt="Brasão Impetus" />
+      </section>
+    </main>
     <footer></footer>
+    <script>
+      window.onscroll = function () {
+        stickyNavbar();
+      };
+
+      var brasao = document.getElementById("brasao_nav");
+      var navbar = document.getElementById("nav_menu");
+      var sticky = navbar.offsetTop;
+
+      function stickyNavbar() {
+        if (screen.width > 480) {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+            brasao.style.display = "block";
+          } else {
+            navbar.classList.remove("sticky");
+            brasao.style.display = "none";
+          }
+        }
+      }
+    </script>
   </body>
 </html>

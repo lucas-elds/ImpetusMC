@@ -16,6 +16,16 @@
   padding: 1vw 3vw;
 }
 
+.sticky {
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 1s;
+  z-index: 999;
+}
+
 #brasao {
   width: 12vw;
 }
@@ -27,8 +37,7 @@
   align-content: flex-end;
 }
 
-#nav_contador,
-#nav_menu {
+#nav_contador {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -76,6 +85,33 @@
   margin-top: -1vw;
 }
 
+#nav_menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+#brasao_nav {
+  display: none;
+  width: 6vw;
+  margin: 0.5vw 2vw;
+  align-self: flex-start;
+}
+
+#itens_menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  list-style-type: none;
+}
+
 .item_menu {
   padding: 0.3vw 0.8vw;
   font-size: 1.7vw;
@@ -91,6 +127,19 @@
   color: #000000;
   text-decoration: underline;
   transition: 0.5s;
+}
+
+#topo {
+  width: 100%;
+  background-image: url("img/background.png");
+  background-size: 100% 100%;
+  text-align: center;
+  filter: contrast(1.2);
+}
+
+#topo img {
+  width: 35%;
+  padding: 5vw 0vw;
 }
 
 @media only screen and (max-width: 768px) {
@@ -128,6 +177,11 @@
 
   .item_menu {
     font-size: 3vw;
+  }
+
+  #brasao_nav {
+    width: 12vw;
+    margin: 1vw 2vw;
   }
 }
 
