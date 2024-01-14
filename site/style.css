@@ -142,6 +142,196 @@
   padding: 5vw 0vw;
 }
 
+#sobre {
+  background-image: url("img/sobre.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto 100%;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+  padding: 8vw 7vw;
+}
+
+.titulo_subtitulo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.titulo {
+  font-family: "Bebas Neue", sans-serif;
+  color: #000000;
+  font-size: 10vw;
+  letter-spacing: 0.4vw;
+  text-shadow: 0.073vw 0 #8e8e8e, -0.073vw 0 #8e8e8e, 0 0.073vw #8e8e8e,
+    0 -0.073vw #8e8e8e, 0.073vw 0.073vw #8e8e8e, -0.073vw -0.073vw #8e8e8e,
+    0.073vw -0.073vw #8e8e8e, -0.073vw 0.073vw #8e8e8e;
+}
+
+.subtitulo {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2vw;
+  margin-top: -3vw;
+  margin-left: -7vw;
+  color: #ffffff;
+  display: flex;
+}
+
+.subtitulo_deco {
+  font-family: "Acme", sans-serif;
+  font-size: 1.4vw;
+  color: #ffffff;
+  margin: 0.8vw 1.75vw;
+  font-weight: 700;
+  letter-spacing: 0.25vw;
+}
+
+.texto {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.25vw;
+  color: #8e8e8e;
+  width: 65%;
+  letter-spacing: 0px;
+  line-height: 1.75vw;
+  text-shadow: 0.146vw 0 #000000, -0.146vw 0 #000000, 0 0.146vw #000000,
+    0 -0.146vw #000000, 0.146vw 0.146vw #000000, -0.146vw -0.146vw #000000,
+    0.146vw -0.146vw #000000, -0.146vw 0.146vw #000000;
+}
+
+.texto p {
+  margin: 1.5vw 0vw;
+}
+
+#galeria {
+  background-color: #131315;
+  color: #e3e3e3;
+  font-family: "Oswald", sans-serif;
+}
+
+#imagens_galeria {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.img_galeria {
+  width: 100%;
+}
+
+#botao_galeria {
+  font-size: 1.5vw;
+  padding: 1vw 5.5vw;
+  text-align: end;
+}
+
+#botao_galeria a {
+  color: #e3e3e3;
+  text-decoration: none;
+}
+
+#historia {
+  background-image: url("img/bg_preto.jpg");
+  background-size: 100% 100%;
+  background-color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.1rem;
+  display: flex;
+  flex-direction: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-start;
+  padding: 5rem 4rem;
+}
+
+#historia img {
+  width: 400px;
+}
+
+#divisao {
+  background-image: url("img/background.png");
+  background-size: 100% 100%;
+  background-color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  padding: 1rem 1rem;
+}
+
+#divisao .titulo_subtitulo {
+  align-self: flex-start;
+  padding: 2rem 10rem;
+}
+
+#mapa_divisoes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+#mapa {
+  width: 50%;
+}
+
+#matriz_divisao {
+  list-style-type: none;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.bandeira {
+  width: 60px;
+  align-self: flex-start;
+  padding: 1rem;
+}
+
+#matriz_divisao li {
+  color: #8e8e8e;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.divisao_cidades {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+
+#matriz_divisao h1,
+#matriz_divisao h2 {
+  font-size: 2.2rem;
+}
+
+#matriz_divisao h3 {
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+}
+
 @media only screen and (max-width: 768px) {
   #navbar {
     letter-spacing: 0.2vw;
