@@ -241,168 +241,74 @@
 
 #historia {
   background-image: url("img/bg_preto.jpg");
-  background-size: 100% 100%;
+  background-size: auto;
   background-color: #000000;
   font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1vw;
   display: flex;
   flex-direction: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   align-content: flex-start;
-  padding: 5rem 4rem;
+  padding: 6vw 9vw;
 }
 
 #historia img {
-  width: 400px;
+  width: 30vw;
 }
 
-#divisao {
-  background-image: url("img/background.png");
-  background-size: 100% 100%;
-  background-color: #000000;
-  font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 0.1rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: flex-start;
-  padding: 1rem 1rem;
+#historia .texto {
+  width: 90%;
 }
 
-#divisao .titulo_subtitulo {
-  align-self: flex-start;
-  padding: 2rem 10rem;
-}
-
-#mapa_divisoes {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
-
-#mapa {
-  width: 50%;
-}
-
-#matriz_divisao {
-  list-style-type: none;
+.btn_historia {
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #444444;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-}
-
-.bandeira {
-  width: 60px;
-  align-self: flex-start;
-  padding: 1rem;
-}
-
-#matriz_divisao li {
-  color: #8e8e8e;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 2vw;
+}
+
+.btn_historia div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
   align-content: center;
 }
 
-.divisao_cidades {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  line-height: 1.5rem;
+.btn_historia div p {
+  font-family: "Acme", sans-serif;
+  font-size: 1.4vw;
+  margin-right: 2vw;
+  font-weight: 700;
 }
 
-#matriz_divisao h1,
-#matriz_divisao h2 {
-  font-size: 2.2rem;
-}
-
-#matriz_divisao h3 {
-  font-size: 1rem;
+.btn_historia div h3 {
   font-family: "Oswald", sans-serif;
+  font-size: 1.8vw;
+  letter-spacing: 0.1vw;
 }
 
 @media only screen and (max-width: 768px) {
   #navbar {
     letter-spacing: 0.2vw;
-  }
-
-  #brasao {
-    width: 20vw;
+    flex-direction: column;
+    padding: 2vw 3vw;
   }
 
   #nav_contador li {
     margin: 1.5vw;
-  }
-
-  #nav_contador h1 {
-    font-size: 3.5vw;
-    line-height: 4vw;
-  }
-
-  .contador_titulo {
-    font-size: 3vw;
-  }
-
-  .contador_valor {
-    font-size: 12vw;
-    padding-left: 0.6vw;
-    letter-spacing: 0.6vw;
-  }
-
-  .linha-vertical {
-    height: 15vw;
-    margin-top: -3vw;
-  }
-
-  .item_menu {
-    font-size: 3vw;
-  }
-
-  #brasao_nav {
-    width: 12vw;
-    margin: 1vw 2vw;
-  }
-
-  .titulo {
-    font-size: 14vw;
-  }
-
-  .subtitulo {
-    font-size: 1.8vw;
-    margin-top: -4vw;
-    margin-left: -8vw;
-  }
-
-  .subtitulo_deco {
-    font-size: 2vw;
-    margin: 1.5vw 2vw;
-  }
-
-  .texto {
-    font-size: 1.8vw;
-    width: 65%;
-    line-height: 2.5vw;
-  }
-
-  .texto p {
-    margin: 2.5vw 0vw;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #navbar {
-    flex-direction: column;
-    padding: 2vw 3vw;
   }
 
   #brasao {
@@ -482,14 +388,39 @@
 
   .texto {
     color: #ffffff;
-    font-size: 3vw;
+    font-size: 3.5vw;
     width: 100%;
-    line-height: 3.5vw;
+    line-height: 4.5vw;
     text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000,
       1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
   }
 
   .texto p {
-    margin: 2.5vw 0vw;
+    margin: 4vw 0vw;
   }
+
+  #imagens_galeria {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+  }
+
+  #imagens_galeria li {
+    width: 50%;
+  }
+
+  .img_galeria {
+    width: 98%;
+    height: 98%;
+    padding: 0rem 0rem;
+  }
+
+  #botao_galeria {
+    font-size: 4vw;
+    padding: 1.5vw 4vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
 }
