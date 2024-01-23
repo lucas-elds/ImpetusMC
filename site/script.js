@@ -1,3 +1,5 @@
+let linha = document.querySelectorAll(".linha-vertical");
+
 // Navbar:
 window.onscroll = function () {
   stickyNavbar();
@@ -9,7 +11,7 @@ let sticky = navbar.offsetTop;
 
 function stickyNavbar() {
   if (screen.width > 768) {
-    if (window.pageYOffset >= sticky) {
+    if (window.scrollY >= sticky) {
       navbar.classList.add("sticky");
       brasao.style.display = "block";
     } else {
