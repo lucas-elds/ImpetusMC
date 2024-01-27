@@ -20,7 +20,7 @@
 #hamburger {
   display: none;
   position: fixed;
-  top: 40px;
+  top: 20px;
   right: 15px;
   z-index: 10000;
   border: 0;
@@ -590,6 +590,7 @@
     width: 5rem;
     padding: 0.2rem;
     margin: 0rem;
+    margin-bottom: -3rem;
     border-radius: 5rem;
   }
 

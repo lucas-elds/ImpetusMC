@@ -2,11 +2,6 @@ window.onscroll = function () {
   stickyNavbar();
 };
 
-// addEventListener("resize", function () {
-//   // menuResponsivo();
-// });
-
-// Botão topo:
 let botaoTopo = document.getElementById("botaoTopo");
 
 function funcaoTopo() {
@@ -16,7 +11,7 @@ function funcaoTopo() {
 }
 
 // Navbar:
-let brasao = document.getElementById("brasao_nav");
+let brasao = document.querySelector("#brasao_nav img");
 let hamburger = document.getElementById("hamburger");
 let itens = document.querySelectorAll(".itens");
 let navbar = document.getElementById("nav_menu");
@@ -28,26 +23,25 @@ function stickyNavbar() {
   if (window.scrollY >= tamanhoTopo) {
     botaoTopo.style.display = "block";
     navFixo.style.display = "flex";
-    // navFixo.style.zIndex = "999";
   } else {
     botaoTopo.style.display = "none";
     navFixo.style.display = "none";
-    // navFixo.style.zIndex = "-1";
-    // fechaHamburger();
   }
 }
 
 function clickHamburger() {
   if (opcaoNavFixo[0].style.display == "block") {
-    for (let i = 0; i < opcaoNavFixo.length; i++) {
-      opcaoNavFixo[i].style.display = "none";
-    }
-    hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    fechaHamburger();
   } else {
+    abreHamburguer();
+  }
+
+  function abreHamburguer() {
     for (let i = 0; i < opcaoNavFixo.length; i++) {
       opcaoNavFixo[i].style.display = "block";
     }
     hamburger.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    brasao.style.marginBottom = "-0.5rem";
   }
 }
 
@@ -56,6 +50,7 @@ function fechaHamburger() {
     opcaoNavFixo[i].style.display = "none";
   }
   hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
+  brasao.style.marginBottom = "-3rem";
 }
 
 // Botões História:
