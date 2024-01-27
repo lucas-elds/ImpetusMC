@@ -66,16 +66,14 @@
                 <li><a class="item_menu" href="#comando">COMANDO</a></li>
               </div>
 
-              <a href="">
+              <!-- <a href="">
                 <img
                   id="brasao_nav"
                   src="img/brasao.png"
                   alt="Brasão Impetus MC"
                 />
               </a>
-              <button onclick="clickHamburger()" id="hamburger">
-                <i class="fa-solid fa-bars"></i>
-              </button>
+               -->
 
               <div class="itens">
                 <li><a class="item_menu" href="#divisao">DIVISÕES</a></li>
@@ -86,16 +84,44 @@
           </ul>
         </div>
       </nav>
+      <ul id="nav_fixo">
+        <a class="opcao_navfixo" onclick="fechaHamburger()" href="#sobre">
+          <li>IMPETUS</li>
+        </a>
+
+        <a class="opcao_navfixo" onclick="fechaHamburger()" href="#historia">
+          <li>HISTÓRIA</li>
+        </a>
+
+        <a class="opcao_navfixo" onclick="fechaHamburger()" href="#comando">
+          <li>COMANDO</li>
+        </a>
+
+        <li id="brasao_nav">
+          <a onclick="funcaoTopo()" style="background-color: transparent">
+            <img src="img/brasao.png" alt="Brasão Impetus MC" />
+          </a>
+          <button onclick="clickHamburger()" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </li>
+
+
+          <a class="opcao_navfixo" onclick="fechaHamburger()" href="#divisao">
+            <li>DIVISÕES</li>
+          </a>
+
+          <a class="opcao_navfixo" onclick="fechaHamburger()" href="#galeria">
+            <li>GALERIA</li>
+          </a>
+
+          <a class="opcao_navfixo" onclick="fechaHamburger()" href="#contato">
+            <li>CONTATO</li>
+          </a>
+        </li>
+      </ul>
     </header>
     <main>
-      <ul id="menu_mobile">
-        <a onclick="itemHamburger()" href="#sobre"><li>IMPETUS</li></a>
-        <a onclick="itemHamburger()" href="#historia"><li>HISTÓRIA</li></a>
-        <a onclick="itemHamburger()" href="#comando"><li>COMANDO</li></a>
-        <a onclick="itemHamburger()" href="#divisao"><li>DIVISÕES</li></a>
-        <a onclick="itemHamburger()" href="#galeria"><li>GALERIA</li></a>
-        <a onclick="itemHamburger()" href="#contato"><li>CONTATO</li></a>
-      </ul>
       <section id="topo">
         <img src="img/brasao.png" alt="Brasão Impetus" />
       </section>
