@@ -17,6 +17,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
+
   <body>
     <header>
       <nav id="navbar">
@@ -35,7 +36,7 @@
               </li>
             </div>
             <div style="display: flex">
-              <div class="linha-vertical"></div>
+              <div class="primeira linha-vertical"></div>
               <li>
                 <h2 class="contador_titulo">MEMBROS</h2>
                 <h2 class="contador_valor">63</h2>
@@ -58,21 +59,25 @@
             </div>
           </ul>
           <ul id="nav_menu">
-            <a href="">
-              <img
-                id="brasao_nav"
-                src="img/brasao.png"
-                alt="Brasão Impetus MC"
-              />
-            </a>
-
             <div id="itens_menu">
-              <div style="display: flex">
+              <div class="itens">
                 <li><a class="item_menu" href="#sobre">IMPETUS</a></li>
                 <li><a class="item_menu" href="#historia">HISTÓRIA</a></li>
                 <li><a class="item_menu" href="#comando">COMANDO</a></li>
               </div>
-              <div style="display: flex">
+
+              <a href="">
+                <img
+                  id="brasao_nav"
+                  src="img/brasao.png"
+                  alt="Brasão Impetus MC"
+                />
+              </a>
+              <button onclick="clickHamburger()" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div class="itens">
                 <li><a class="item_menu" href="#divisao">DIVISÕES</a></li>
                 <li><a class="item_menu" href="#galeria">GALERIA</a></li>
                 <li><a class="item_menu" href="#contato">CONTATO</a></li>
@@ -83,6 +88,14 @@
       </nav>
     </header>
     <main>
+      <ul id="menu_mobile">
+        <a onclick="itemHamburger()" href="#sobre"><li>IMPETUS</li></a>
+        <a onclick="itemHamburger()" href="#historia"><li>HISTÓRIA</li></a>
+        <a onclick="itemHamburger()" href="#comando"><li>COMANDO</li></a>
+        <a onclick="itemHamburger()" href="#divisao"><li>DIVISÕES</li></a>
+        <a onclick="itemHamburger()" href="#galeria"><li>GALERIA</li></a>
+        <a onclick="itemHamburger()" href="#contato"><li>CONTATO</li></a>
+      </ul>
       <section id="topo">
         <img src="img/brasao.png" alt="Brasão Impetus" />
       </section>
@@ -231,6 +244,9 @@
       </section>
     </main>
     <footer></footer>
+    <button onclick="funcaoTopo()" id="botaoTopo" title="Ir para o topo">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 #navbar {
@@ -22,8 +23,45 @@
   top: 0;
   left: 0;
   right: 0;
-  transition: 1s;
+  transition: 0.5s;
   z-index: 999;
+}
+
+#hamburger {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  z-index: 99;
+  border: 0;
+  color: #ffffff;
+  font-size: 2rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#menu_mobile {
+  display: none;
+}
+
+#botaoTopo {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  outline: none;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid #ffffff;
+  border-radius: 5rem;
+}
+
+#botaoTopo:hover {
+  background-color: #555555;
 }
 
 #brasao {
@@ -87,21 +125,14 @@
   margin-top: 1.5rem;
 }
 
-#nav_menu {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-}
-
 #brasao_nav {
   display: none;
   width: 5rem;
-  margin: 0.4rem 1.7rem;
-  align-self: flex-start;
+  padding: 0.5rem;
+  margin: 0.2rem 1.7rem;
+  margin-bottom: -2rem;
+  background-color: #000000;
+  border-radius: 5rem;
 }
 
 #itens_menu {
@@ -112,6 +143,10 @@
   align-items: center;
   align-content: center;
   list-style-type: none;
+}
+
+#itens_menu div {
+  display: flex;
 }
 
 .item_menu {
@@ -325,6 +360,7 @@
 
   .contador_valor {
     font-size: 6rem;
+    letter-spacing: 1vw;
   }
 
   .item_menu {
@@ -350,6 +386,9 @@
 
   #hoje {
     flex-direction: row;
+    margin-bottom: -2vw;
+    font-size: 10vw;
+    font-weight: normal;
   }
 
   #nav_contador li {
@@ -361,6 +400,14 @@
     margin: 2vw;
   }
 
+  #brasao_nav {
+    width: 15vw;
+    padding: 0.5vw;
+    margin: 0.2vw 1.7vw;
+    margin-bottom: -8vw;
+    border-radius: 5rem;
+  }
+
   #nav_menu {
     display: flex;
     flex-direction: row;
@@ -368,10 +415,6 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-  }
-
-  #nav_contador h1 {
-    font-size: 2rem;
   }
 
   .contador_titulo {
@@ -384,11 +427,16 @@
   }
 
   .linha-vertical {
-    height: 19vw;
+    height: 20vw;
+    margin-bottom: 9vw;
+  }
+
+  .primeira {
+    display: none;
   }
 
   .item_menu {
-    font-size: 3.5vw;
+    font-size: 3vw;
     padding: 0.3vw 1vw;
     margin: 0 0.5vw;
   }
@@ -463,7 +511,74 @@
 }
 
 @media only screen and (max-width: 480px) {
+  #brasao_nav {
+    width: 5rem;
+    padding: 0.5rem;
+    margin: 0.2rem 1.7rem;
+    margin-bottom: -2rem;
+  }
+
+  #menu_mobile {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.2vw;
+    font-size: 6vw;
+    list-style-type: none;
+    background-color: #000000;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding-top: 2rem;
+  }
+
+  #menu_mobile li {
+    background-color: #000000;
+    text-align: center;
+    padding: 0.2rem 0rem;
+    margin: 0.5rem;
+    border: 1px solid #ffffff;
+  }
+
+  #menu_mobile li:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  #menu_mobile a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  #menu_mobile a:hover {
+    text-decoration: underline;
+    color: #000000;
+  }
+
   #itens_menu {
     flex-wrap: wrap;
+  }
+
+  #itens_menu li {
+    background-color: #000000;
+    border: 2px solid #cdcccc;
+    margin: 1vw 1vw;
+    padding: 0.5vw 3vw;
+    width: 20vw;
+    text-align: center;
+  }
+
+  .item_menu {
+    color: #ffffff;
+    transition: 0;
+    font-size: 5vw;
+  }
+
+  .item_menu:hover {
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0;
   }
 }
