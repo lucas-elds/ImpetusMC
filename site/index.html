@@ -1,192 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IMPETUS M.C.</title>
-    <link rel="icon" type="image/x-icon" href="img/brasao.png" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Oswald&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav id="navbar">
-        <a href="#">
-          <img id="brasao" src="img/brasao.png" alt="Brasão Impetus MC" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMPETUS M.C.</title>
+  <link rel="icon" type="image/x-icon" href="img/brasao.webp" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Oswald&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <a href="#">
+        <img id="brasao" src="img/brasao.webp" alt="Brasão Impetus MC" />
+      </a>
+      <div id="navbar_itens">
+        <ul id="nav_contador">
+          <div>
+            <li>
+              <h1 id="hoje">
+                <p>HOJE</p>
+                <p>NÓS</p>
+                <p>SOMOS</p>
+              </h1>
+            </li>
+          </div>
+          <div style="display: flex">
+            <div class="primeira linha-vertical"></div>
+            <li>
+              <h2 class="contador_titulo">MEMBROS</h2>
+              <h2 class="contador_valor">63</h2>
+            </li>
+            <div class="linha-vertical"></div>
+            <li>
+              <h2 class="contador_titulo">DIVISÕES</h2>
+              <h2 class="contador_valor">06</h2>
+            </li>
+            <div class="linha-vertical"></div>
+            <li>
+              <h2 class="contador_titulo">ESTADOS</h2>
+              <h2 class="contador_valor">04</h2>
+            </li>
+            <div class="linha-vertical"></div>
+            <li>
+              <h2 class="contador_titulo">PAÍSES</h2>
+              <h2 class="contador_valor">02</h2>
+            </li>
+          </div>
+        </ul>
+        <ul id="nav_menu">
+          <div id="itens_menu">
+            <div class="itens">
+              <li><a class="item_menu" href="#sobre">IMPETUS</a></li>
+              <li><a class="item_menu" href="#historia">HISTÓRIA</a></li>
+              <li><a class="item_menu" href="#comando">COMANDO</a></li>
+            </div>
+            <div class="itens">
+              <li><a class="item_menu" href="#divisao">DIVISÕES</a></li>
+              <li><a class="item_menu" href="#galeria">GALERIA</a></li>
+              <li><a class="item_menu" href="#contato">CONTATO</a></li>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <ul id="nav_fixo">
+      <a class="opcao_navfixo" onclick="fechaHamburger()" href="#sobre">
+        <li>IMPETUS</li>
+      </a>
+
+      <a class="opcao_navfixo" onclick="fechaHamburger()" href="#historia">
+        <li>HISTÓRIA</li>
+      </a>
+
+      <a class="opcao_navfixo" onclick="fechaHamburger()" href="#comando">
+        <li>COMANDO</li>
+      </a>
+
+      <li id="brasao_nav">
+        <a href="" style="background-color: transparent">
+          <img src="img/brasao.webp" alt="Brasão Impetus MC" />
         </a>
-        <div id="navbar_itens">
-          <ul id="nav_contador">
-            <div>
-              <li>
-                <h1 id="hoje">
-                  <p>HOJE</p>
-                  <p>NÓS</p>
-                  <p>SOMOS</p>
-                </h1>
-              </li>
-            </div>
-            <div style="display: flex">
-              <div class="primeira linha-vertical"></div>
-              <li>
-                <h2 class="contador_titulo">MEMBROS</h2>
-                <h2 class="contador_valor">63</h2>
-              </li>
-              <div class="linha-vertical"></div>
-              <li>
-                <h2 class="contador_titulo">DIVISÕES</h2>
-                <h2 class="contador_valor">06</h2>
-              </li>
-              <div class="linha-vertical"></div>
-              <li>
-                <h2 class="contador_titulo">ESTADOS</h2>
-                <h2 class="contador_valor">04</h2>
-              </li>
-              <div class="linha-vertical"></div>
-              <li>
-                <h2 class="contador_titulo">PAÍSES</h2>
-                <h2 class="contador_valor">02</h2>
-              </li>
-            </div>
-          </ul>
-          <ul id="nav_menu">
-            <div id="itens_menu">
-              <div class="itens">
-                <li><a class="item_menu" href="#sobre">IMPETUS</a></li>
-                <li><a class="item_menu" href="#historia">HISTÓRIA</a></li>
-                <li><a class="item_menu" href="#comando">COMANDO</a></li>
-              </div>
+        <button onclick="clickHamburger()" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </li>
 
-              <!-- <a href="">
-                <img
-                  id="brasao_nav"
-                  src="img/brasao.png"
-                  alt="Brasão Impetus MC"
-                />
-              </a>
-               -->
 
-              <div class="itens">
-                <li><a class="item_menu" href="#divisao">DIVISÕES</a></li>
-                <li><a class="item_menu" href="#galeria">GALERIA</a></li>
-                <li><a class="item_menu" href="#contato">CONTATO</a></li>
-              </div>
-            </div>
-          </ul>
+      <a class="opcao_navfixo" onclick="fechaHamburger()" href="#divisao">
+        <li>DIVISÕES</li>
+      </a>
+
+      <a class="opcao_navfixo" onclick="fechaHamburger()" href="#galeria">
+        <li>GALERIA</li>
+      </a>
+
+      <a class="opcao_navfixo" onclick="fechaHamburger()" href="#contato">
+        <li>CONTATO</li>
+      </a>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <section id="topo">
+      <img src="img/brasao.webp" alt="Brasão Impetus" />
+    </section>
+    <section id="sobre">
+      <div class="titulo_subtitulo">
+        <h1 class="titulo">O IMPETUS</h1>
+        <div class="subtitulo">
+          <p class="subtitulo_deco">x x x x x</p>
+          <h2>MOTO CLUBE X TRADIÇÃO</h2>
         </div>
-      </nav>
-      <ul id="nav_fixo">
-        <a class="opcao_navfixo" onclick="fechaHamburger()" href="#sobre">
-          <li>IMPETUS</li>
-        </a>
-
-        <a class="opcao_navfixo" onclick="fechaHamburger()" href="#historia">
-          <li>HISTÓRIA</li>
-        </a>
-
-        <a class="opcao_navfixo" onclick="fechaHamburger()" href="#comando">
-          <li>COMANDO</li>
-        </a>
-
-        <li id="brasao_nav">
-          <a href="" style="background-color: transparent">
-            <img src="img/brasao.png" alt="Brasão Impetus MC" />
-          </a>
-          <button onclick="clickHamburger()" id="hamburger">
-            <i class="fa-solid fa-bars"></i>
-          </button>
+      </div>
+      <div class="texto">
+        <p>
+          O Impetus Moto Clube é uma fraternidade de amantes de motocicletas,
+          motociclismo e seu estilo de vida.
+        </p>
+        <p>
+          Baseado nos cinco pilares do motoclubismo tradicional, tendo como
+          ênfase três desses pilares que são IGUALDADE, FRATERNIDADE E
+          LEALDADE.
+        </p>
+        <p>
+          Prezamos pela HIERARQUIA e DISCIPLINA, normas que são necessárias
+          para o bom convívio em nossa irmandade.
+        </p>
+      </div>
+    </section>
+    <section id="galeria">
+      <ul id="imagens_galeria">
+        <li>
+          <img class="img_galeria" src="img/galeria/galeria.webp" alt="Imagem da Galeria" />
         </li>
-
-
-          <a class="opcao_navfixo" onclick="fechaHamburger()" href="#divisao">
-            <li>DIVISÕES</li>
-          </a>
-
-          <a class="opcao_navfixo" onclick="fechaHamburger()" href="#galeria">
-            <li>GALERIA</li>
-          </a>
-
-          <a class="opcao_navfixo" onclick="fechaHamburger()" href="#contato">
-            <li>CONTATO</li>
-          </a>
+        <li>
+          <img class="img_galeria" src="img/galeria/galeria.webp" alt="Imagem da Galeria" />
+        </li>
+        <li>
+          <img class="img_galeria" src="img/galeria/galeria.webp" alt="Imagem da Galeria" />
+        </li>
+        <li>
+          <img class="img_galeria" src="img/galeria/galeria.webp" alt="Imagem da Galeria" />
         </li>
       </ul>
-    </header>
-    <main>
-      <section id="topo">
-        <img src="img/brasao.png" alt="Brasão Impetus" />
-      </section>
-      <section id="sobre">
-        <div class="titulo_subtitulo">
-          <h1 class="titulo">O IMPETUS</h1>
-          <div class="subtitulo">
-            <p class="subtitulo_deco">x x x x x</p>
-            <h2>MOTO CLUBE X TRADIÇÃO</h2>
-          </div>
-        </div>
-        <div class="texto">
-          <p>
-            O Impetus Moto Clube é uma fraternidade de amantes de motocicletas,
-            motociclismo e seu estilo de vida.
-          </p>
-          <p>
-            Baseado nos cinco pilares do motoclubismo tradicional, tendo como
-            ênfase três desses pilares que são IGUALDADE, FRATERNIDADE E
-            LEALDADE.
-          </p>
-          <p>
-            Prezamos pela HIERARQUIA e DISCIPLINA, normas que são necessárias
-            para o bom convívio em nossa irmandade.
-          </p>
-        </div>
-      </section>
-      <section id="galeria">
-        <ul id="imagens_galeria">
-          <li>
-            <img
-              class="img_galeria"
-              src="img/galeria/galeria.jpg"
-              alt="Imagem da Galeria"
-            />
-          </li>
-          <li>
-            <img
-              class="img_galeria"
-              src="img/galeria/galeria.jpg"
-              alt="Imagem da Galeria"
-            />
-          </li>
-          <li>
-            <img
-              class="img_galeria"
-              src="img/galeria/galeria.jpg"
-              alt="Imagem da Galeria"
-            />
-          </li>
-          <li>
-            <img
-              class="img_galeria"
-              src="img/galeria/galeria.jpg"
-              alt="Imagem da Galeria"
-            />
-          </li>
-        </ul>
-        <h3 id="botao_galeria">
-          <a href="https://www.instagram.com/impetusmc/"
-            ><i class="fa-brands fa-instagram"></i> Galeria Completa</a
-          >
-        </h3>
-      </section>
-      <section id="historia">
+      <h3 id="botao_galeria">
+        <a href="https://www.instagram.com/impetusmc/"><i class="fa-brands fa-instagram"></i> Galeria Completa</a>
+      </h3>
+    </section>
+    <section id="historia">
         <div>
           <div class="titulo_subtitulo">
             <h1 class="titulo">HISTÓRIA</h1>
@@ -266,13 +234,14 @@
             </div>
           </div>
         </div>
-        <img src="img/historia.png" alt="Logo Vinte e  Três" />
+        <img src="img/logo23.webp" alt="Logo Vinte e  Três" />
       </section>
-    </main>
-    <footer></footer>
-    <button onclick="funcaoTopo()" id="botaoTopo" title="Ir para o topo">
-      <i class="fa-solid fa-arrow-up"></i>
-    </button>
-    <script src="script.js"></script>
-  </body>
+  </main>
+  <footer></footer>
+  <button onclick="funcaoTopo()" id="botaoTopo" title="Ir para o topo">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  <script src="script.js"></script>
+</body>
+
 </html>
