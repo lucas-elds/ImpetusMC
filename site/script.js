@@ -56,12 +56,11 @@ function fechaHamburger() {
 }
 
 // Galeria:
-let galeria = document.getElementById("galeria");
-let galeria1 = document.getElementById("galeria1");
-let galeria2 = document.getElementById("galeria2");
-let galeria3 = document.getElementById("galeria3");
-let galeria4 = document.getElementById("galeria4");
-let galeria5 = document.getElementById("galeria5");
+let img1Galeria = document.getElementById("img1_galeria");
+let img2Galeria = document.getElementById("img2_galeria");
+let img3Galeria = document.getElementById("img3_galeria");
+let img4Galeria = document.getElementById("img4_galeria");
+let img5Galeria = document.getElementById("img5_galeria");
 let preCarregamento = document.getElementById("preCarregamento");
 
 let imagem = [];
@@ -73,27 +72,29 @@ for (let i = 1; i <= qntdImg; i++) {
 }
 galeriaCompleta.shift();
 preCarregamento.style.backgroundImage = galeriaCompleta; // Faz um pré carregamento das imagens da galeria
+console.log(galeriaCompleta);
+
+function attGaleria() {
+  img1Galeria.style.backgroundImage = `url(${imagem[0]})`;
+  img2Galeria.style.backgroundImage = `url(${imagem[1]})`;
+  img3Galeria.style.backgroundImage = `url(${imagem[2]})`;
+  img4Galeria.style.backgroundImage = `url(${imagem[3]})`;
+  img5Galeria.style.backgroundImage = `url(${imagem[4]})`;
+}
+attGaleria();
 
 function voltar() {
   let fim = `${imagem[imagem.length - 1]}`;
   imagem.pop();
   imagem.unshift(fim);
-  galeria1.style.backgroundImage = `url(${imagem[0]})`;
-  galeria2.style.backgroundImage = `url(${imagem[1]})`;
-  galeria3.style.backgroundImage = `url(${imagem[2]})`;
-  galeria4.style.backgroundImage = `url(${imagem[3]})`;
-  galeria5.style.backgroundImage = `url(${imagem[4]})`;
+  attGaleria();
 }
 
 function passar() {
   let inicio = imagem[0];
   imagem.shift();
   imagem.push(inicio);
-  galeria1.style.backgroundImage = `url(${imagem[0]})`;
-  galeria2.style.backgroundImage = `url(${imagem[1]})`;
-  galeria3.style.backgroundImage = `url(${imagem[2]})`;
-  galeria4.style.backgroundImage = `url(${imagem[3]})`;
-  galeria5.style.backgroundImage = `url(${imagem[4]})`;
+  attGaleria();
 }
 
 // Botões História:
