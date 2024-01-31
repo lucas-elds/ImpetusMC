@@ -135,26 +135,25 @@
         </p>
       </div>
     </section>
-    <section id="galeria">
-      <ul id="imagens_galeria">
-        <li>
-          <img class="img_galeria" src="img/galeria/galeria.webp" alt="Imagem da Galeria" />
-        </li>
-        <li>
-          <img class="img_galeria" src="img/galeria/galeria.webp" alt="Imagem da Galeria" />
-        </li>
-        <li>
-          <img class="img_galeria" src="img/galeria/galeria.webp" alt="Imagem da Galeria" />
-        </li>
-        <li>
-          <img class="img_galeria" src="img/galeria/galeria.webp" alt="Imagem da Galeria" />
-        </li>
-      </ul>
-      <h3 id="botao_galeria">
-        <a href="https://www.instagram.com/impetusmc/"><i class="fa-brands fa-instagram"></i> Galeria Completa</a>
-      </h3>
-    </section>
-    <section id="historia">
+    <ul id="galeria">
+      <li id="galeria1"></li>
+      <li id="galeria2"></li>
+      <li id="galeria3"></li>
+      <li id="galeria4"></li>
+      <li id="galeria5"></li>
+
+    </ul>
+    <div id="preCarregamento"></div>
+    <ul id="footer_galeria">
+      <li id="botoes_galeria">
+        <button onclick="voltar()" aria-label="Voltar imagem"><i class="fa-solid fa-caret-left"></i></button>
+        <button onclick="passar()" aria-label="Passar imagem"><i class="fa-solid fa-caret-right"></i></button>
+      </li>
+      <li id="insta_galeria"><a href="https://www.instagram.com/impetusmc/" target="_blank"
+          rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> impetusmc</a>
+      </li>
+    </ul>
+    <!-- <section id="historia">
         <div>
           <div class="titulo_subtitulo">
             <h1 class="titulo">HISTÓRIA</h1>
@@ -235,7 +234,7 @@
           </div>
         </div>
         <img src="img/logo23.webp" alt="Logo Vinte e  Três" />
-      </section>
+      </section> -->
   </main>
   <footer></footer>
   <button onclick="funcaoTopo()" id="botaoTopo" title="Ir para o topo">

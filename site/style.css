@@ -273,35 +273,86 @@
 }
 
 #galeria {
+  width: 100%;
+  filter: grayscale(100%);
+  list-style-type: none;
   background-color: #131315;
-  color: #e3e3e3;
-  font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: row;
 }
 
-#imagens_galeria {
+#galeria li {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+
+#galeria1 {
+  background-image: url(img/galeria/img1.webp);
+}
+
+#galeria2 {
+  background-image: url(img/galeria/img2.webp);
+}
+
+#galeria3 {
+  background-image: url(img/galeria/img3.webp);
+}
+
+#galeria4 {
+  background-image: url(img/galeria/img4.webp);
+}
+
+#galeria5 {
+  background-image: url(img/galeria/img5.webp);
+}
+
+#footer_galeria {
   width: 100%;
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #131315;
 }
 
-.img_galeria {
-  width: 100%;
+#botoes_galeria {
+  width: 50%;
+  text-align: right;
 }
 
-#botao_galeria {
-  font-size: 1.5vw;
-  padding: 1vw 5.5vw;
-  text-align: end;
+#insta_galeria {
+  width: 50%;
+  text-align: right;
 }
 
-#botao_galeria a {
-  color: #e3e3e3;
+#insta_galeria a {
   text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0rem 1rem;
 }
 
-#historia {
+#botoes_galeria button {
+  color: #707070;
+  font-size: 2rem;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  margin: 0rem 0.5rem;
+  transition: 0.5s;
+}
+
+#botoes_galeria button:hover {
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+/* #historia {
   background-image: url("img/bg_preto.webp");
   background-size: auto;
   background-color: #000000;
@@ -360,7 +411,7 @@
   font-family: "Oswald", sans-serif;
   font-size: 1.8vw;
   letter-spacing: 0.1vw;
-}
+} */
 
 @media only screen and (max-width: 1024px) {
   #navbar {
@@ -392,6 +443,10 @@
     padding: 0.25rem 0.7rem;
     font-size: 1.3rem;
     margin: 0 0.2rem;
+  }
+
+  #galeria5 {
+    display: none;
   }
 }
 
@@ -515,26 +570,8 @@
     margin: 4vw 0vw;
   }
 
-  #imagens_galeria {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    text-align: center;
-  }
-
-  #imagens_galeria li {
-    width: 50%;
-  }
-
-  .img_galeria {
-    width: 98%;
-    height: 98%;
-    padding: 0rem 0rem;
-  }
-
-  #botao_galeria {
-    font-size: 4vw;
-    padding: 1.5vw 4vw;
+  #galeria4 {
+    display: none;
   }
 }
 
@@ -616,5 +653,10 @@
 
   #topo img {
     width: 70%;
+  }
+
+  #galeria3,
+  #galeria2 {
+    display: none;
   }
 }
