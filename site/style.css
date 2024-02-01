@@ -268,7 +268,7 @@
   font-family: "Oswald", sans-serif;
   font-size: 1.2vw;
   margin-top: -3vw;
-  margin-left: -7vw;
+  margin-left: -10vw;
   color: #ffffff;
   display: flex;
 }
@@ -418,6 +418,80 @@
   letter-spacing: 0.1vw;
 }
 
+#divisoes {
+  font-family: "Oswald", sans-serif;
+  background-image: url("img/bg_preto.webp");
+  background-size: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  padding: 6vw 0vw;
+  color: #ffffff;
+  letter-spacing: 0.1vw;
+}
+
+#mapa {
+  width: 80%;
+  margin: 2vw 0vw;
+}
+
+.mapa_bandeiras {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.mat_div_sup {
+  padding: 0.5vw 0vw;
+}
+
+.mat_div_sup li {
+  padding: 0.5vw 0vw;
+}
+
+.mat_div_sup i {
+  font-size: 2vw;
+  margin-right: 0.5vw;
+}
+
+.mat_div_sup h1 {
+  color: #ffffff;
+  font-size: 2.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.mat_div_sup h2 {
+  color: #8e8e8e;
+  font-size: 2.2vw;
+}
+
+.mat_div_sup h3 {
+  color: #8e8e8e;
+  font-size: 1.2vw;
+}
+
+.bandeira {
+  width: 5.5vw;
+  height: 4vw;
+  margin: 0.8vw 1vw;
+  border: 1px solid #8e8e8e;
+}
+
+.bandeira_cidades {
+  display: flex;
+}
+
 @media only screen and (max-width: 1024px) {
   #img5_galeria {
     display: none;
@@ -495,30 +569,31 @@
     padding: 2vw;
     border: 1px solid white;
     border-radius: 5rem;
-    margin-top: 2vw;
+    margin-top: -2vw;
+    margin-bottom: 2vw;
   }
 
   .contador_titulo {
-    line-height: 6vw;
-    font-size: 5vw;
+    line-height: 5vw;
+    font-size: 3vw;
   }
 
   .contador_valor {
-    line-height: 18vw;
+    line-height: 14vw;
     padding: 0vw 3vw;
-    padding-top: 3vw;
-    font-size: 27vw;
+    padding-top: 2vw;
+    font-size: 20vw;
   }
 
   .ls {
-    width: 2vw;
+    width: 1vw;
   }
 
   .linha-vertical {
-    height: 28vw;
+    height: 23vw;
   }
 
-  .primeira {
+  .primeira-linha {
     border: 0;
   }
 
@@ -533,12 +608,12 @@
   }
 
   .titulo {
-    font-size: 20vw;
+    font-size: 21vw;
     letter-spacing: 1.5vw;
   }
 
   .subtitulo {
-    font-size: 2.5vw;
+    font-size: 3vw;
     margin-top: -6vw;
     margin-left: -12vw;
     text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000,
@@ -603,15 +678,85 @@
     font-size: 4vw;
     letter-spacing: 0.2vw;
   }
+
+  #divisoes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mapa_bandeiras {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .estados_cidades {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+  }
+
+  .bandeira_cidades {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin: 0.1vw 1vw;
+  }
+
+  .bandeira_cidades li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+
+  .mat_div_sup {
+    margin: 5vw 0vw;
+  }
+
+  .mat_div_sup i {
+    font-size: 5vw;
+    margin-right: 1vw;
+  }
+
+  .mat_div_sup h1 {
+    font-size: 7vw;
+    justify-content: center;
+  }
+
+  .mat_div_sup h2 {
+    font-size: 5vw;
+  }
+
+  .mat_div_sup h3 {
+    font-size: 3.5vw;
+  }
+
+  .bandeira {
+    width: 28vw;
+    height: 19vw;
+    margin: 0.8vw 1vw;
+    border: 1px solid #8e8e8e;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   #hamburger {
     display: block;
-  }
-
-  #nav_contador li {
-    margin: 0vw 1vw;
   }
 
   #nav_fixo {
@@ -658,6 +803,21 @@
     order: -1;
   }
 
+  .contador_titulo {
+    line-height: 6vw;
+    font-size: 5.5vw;
+  }
+
+  .contador_valor {
+    line-height: 23vw;
+    padding: 0vw 5vw;
+    padding-top: 4vw;
+    font-size: 35vw;
+    text-shadow: 0.4vw 0 #cdcccc, -0.4vw 0 #cdcccc, 0 0.4vw #cdcccc,
+      0 -0.4vw #cdcccc, 0.3vw 0.3vw #cdcccc, -0.3vw -0.3vw #cdcccc,
+      0.3vw -0.3vw #cdcccc, -0.3vw 0.3vw #cdcccc;
+  }
+
   #itens_menu {
     flex-wrap: wrap;
   }
@@ -683,6 +843,20 @@
     color: #ffffff;
     text-decoration: underline;
     transition: 0;
+  }
+
+  #tabela_contador div {
+    margin-left: -0.5vw;
+  }
+
+  #tabela_contador div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .linha-vertical {
+    border: 0;
+    height: 0;
   }
 
   #nav_menu {

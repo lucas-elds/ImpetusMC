@@ -31,22 +31,31 @@
               </h1>
             </li>
           </div>
-          <div>
-            <div class="primeira linha-vertical"></div>
-            <li>
-              <h2 class="contador_titulo"><i class="fa-solid fa-location-dot"></i> DIVISÕES</h2>
-              <h2 class="contador_valor">0<div class="ls"></div>6</h2>
-            </li>
+          <div id="tabela_contador">
+            <div class="primeira-linha linha-vertical"></div>
+            <div>
+              <li>
+                <h2 class="contador_titulo"><i class="fa-solid fa-location-dot"></i> DIVISÕES</h2>
+                <h2 class="contador_valor">0<div class="ls"></div>6</h2>
+              </li>
+              <div class="linha-vertical"></div>
+              <li>
+                <h2 class="contador_titulo"><i class="fa-solid fa-handshake-angle"></i> SUPORTES</h2>
+                <h2 class="contador_valor">0<div class="ls"></div>2</h2>
+              </li>
+            </div>
             <div class="linha-vertical"></div>
-            <li>
-              <h2 class="contador_titulo"><i class="fa-solid fa-map-location-dot"></i> ESTADOS</h2>
-              <h2 class="contador_valor">0<div class="ls"></div>4</h2>
-            </li>
-            <div class="linha-vertical"></div>
-            <li>
-              <h2 class="contador_titulo"><i class="fa-solid fa-globe"></i> PAÍSES</h2>
-              <h2 class="contador_valor">0<div class="ls"></div>2</h2>
-            </li>
+            <div>
+              <li>
+                <h2 class="contador_titulo"><i class="fa-solid fa-map-location-dot"></i> ESTADOS</h2>
+                <h2 class="contador_valor">0<div class="ls"></div>5</h2>
+              </li>
+              <div class="linha-vertical"></div>
+              <li>
+                <h2 class="contador_titulo"><i class="fa-solid fa-globe"></i> PAÍSES</h2>
+                <h2 class="contador_valor">0<div class="ls"></div>2</h2>
+              </li>
+            </div>
           </div>
         </ul>
         <ul id="nav_menu">
@@ -57,7 +66,7 @@
               <li><a class="item_menu" href="#historia">HISTÓRIA</a></li>
             </div>
             <div class="itens">
-              <li><a class="item_menu" href="#divisao">DIVISÕES</a></li>
+              <li><a class="item_menu" href="#divisoes">DIVISÕES</a></li>
               <li><a class="item_menu" href="#comando">COMANDO</a></li>
               <li><a class="item_menu" href="#contato">CONTATO</a></li>
             </div>
@@ -83,7 +92,7 @@
           <i class="fa-solid fa-bars"></i>
         </button>
       </li>
-      <a class="opcao_navfixo" onclick="fechaHamburger()" href="#divisao">
+      <a class="opcao_navfixo" onclick="fechaHamburger()" href="#divisoes">
         <li>DIVISÕES</li>
       </a>
       <a class="opcao_navfixo" onclick="fechaHamburger()" href="#comando">
@@ -225,6 +234,110 @@
           </div>
         </div>
         <img src="img/logo23.webp" alt="Logo Vinte e  Três" />
+      </section>
+
+      <section id="divisoes">
+        <div class="mapa_bandeiras">
+          <div class="titulo_subtitulo">
+            <h1 class="titulo">DIVISÃO</h1>
+            <div class="subtitulo">
+              <p class="subtitulo_deco">x x x x x</p>
+              <h2>E MATRIZ</h2>
+            </div>
+          </div>
+          <img id="mapa" src="img/mapa.webp" alt="Mapa Brasil" />
+        </div>
+        <div class="mapa_bandeiras">
+          <ul>
+            <li class="mat_div_sup">
+              <h1><i class="fa-solid fa-house"></i> MATRIZ</h1>
+              <ul class="estados_cidades">
+                <li>
+                  <ul class="bandeira_cidades">
+                    <li>
+                      <img class="bandeira" src="img/bandeiras/brasil.webp" alt="Bandeira do Brasil">
+                    </li>
+                    <li>
+                      <h2>JOÃO PESSOA</h2>
+                      <h3>Paraíba - Brasil</h3>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="mat_div_sup">
+              <h1><i class="fa-solid fa-map-location-dot"></i> DIVISÃO</h1>
+              <ul class="estados_cidades">
+                <li>
+                  <ul class="bandeira_cidades">
+                    <li>
+                      <img class="bandeira" src="img/bandeiras/paraiba.webp" alt="Bandeira da Paraíba">
+                    </li>
+                    <li>
+                      <h2>PARAÍBA</h2>
+                      <h3>Campina Grande - PB</h3>
+                      <h3>Solânea - PB</h3>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul class="bandeira_cidades">
+                    <li>
+                      <img class="bandeira" src="img/bandeiras/pernambuco.webp" alt="Bandeira de Pernambuco">
+                    </li>
+                    <li>
+                      <h2>PERNAMBUCO</h2>
+                      <h3>Garanhuns - PE</h3>
+                      <h3>Olinda - PE</h3>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul class="bandeira_cidades">
+                    <li>
+                      <img class="bandeira" src="img/bandeiras/sergipe.webp" alt="Bandeira de Sergipe">
+                    </li>
+                    <li>
+                      <h2>SERGIPE</h2>
+                      <h3>Aracajú - SE</h3>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="mat_div_sup">
+              <h1><i class="fa-solid fa-handshake-angle"></i> SUPORTE</h1>
+              <ul class="estados_cidades">
+                <li>
+                  <ul class="bandeira_cidades">
+                    <li>
+                      <img class="bandeira" src="img/bandeiras/colombia.webp" alt="Bandeira da Colômbia">
+                    </li>
+                    <li>
+                      <h2>COLÔMBIA</h2>
+                      <h3>Medellín</h3>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="bandeira_cidades">
+                    <li>
+                      <img class="bandeira" src="img/bandeiras/maranhao.webp" alt="Bandeira do Maranhão">
+                    </li>
+                    <li>
+                      <h2>MARANHÃO</h2>
+                      <h3>São Luís - MA</h3>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+        
+        </div>
       </section>
   </main>
   <footer></footer>
