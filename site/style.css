@@ -6,7 +6,7 @@
 }
 
 #navbar {
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2vw;
   color: #ffffff;
   background-color: #000000;
   font-family: "Bebas Neue", sans-serif;
@@ -15,7 +15,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 2.5rem;
+  padding: 0.3vw 2.5vw;
 }
 
 #hamburger {
@@ -32,7 +32,7 @@
 }
 
 #nav_fixo {
-  font-size: 1.3rem;
+  font-size: 1.5vw;
   font-family: "Oswald", sans-serif;
   display: none;
   flex-direction: row;
@@ -52,14 +52,14 @@
   text-align: center;
   color: #ffffff;
   text-decoration: none;
-  margin: 0rem 0.3rem;
+  margin: 0vw 1vw;
   padding: 0;
 }
 
 .opcao_navfixo li {
   background-color: #000000;
-  width: 6rem;
-  border-radius: 1rem;
+  width: 7vw;
+  border-radius: 1vw;
   transition: 0.5s;
 }
 
@@ -71,11 +71,11 @@
 }
 
 #brasao_nav img {
-  width: 5rem;
-  padding: 0.5rem;
-  margin-bottom: -3rem;
+  width: 6vw;
+  padding: 0.4vw;
+  margin-bottom: -3vw;
   background-color: #000000;
-  border-radius: 5rem;
+  border-radius: 5vw;
   cursor: pointer;
 }
 
@@ -100,7 +100,7 @@
 }
 
 #brasao {
-  width: 170px;
+  width: 13vw;
 }
 
 #navbar_itens {
@@ -140,44 +140,51 @@
 }
 
 #nav_contador h2 {
-  margin: 0.1rem 0rem;
+  margin: 0.1vw 0vw;
 }
 
 #nav_menu {
-  margin-top: 2rem;
+  margin-top: 3vw;
 }
 
 #hoje {
-  font-size: 1.5rem;
+  font-size: 2vw;
   display: flex;
   flex-direction: column;
-  padding: 0rem 1rem;
+  padding: 0vw 1vw;
 }
 
 #hoje p {
-  margin: 0rem 0.3rem;
+  margin: 0vw 0.3vw;
 }
 
 .contador_titulo {
-  font-size: 1.3rem;
+  font-size: 1.5vw;
   font-family: "Oswald", sans-serif;
-  line-height: 1.8rem;
+  line-height: 1.8vw;
 }
 
 .contador_valor {
+  display: flex;
   font-family: "Bebas Neue", sans-serif;
-  line-height: 4.5rem;
-  padding: 0rem 1.5rem;
-  padding-top: 1rem;
-  font-size: 7rem;
+  line-height: 6.5vw;
+  padding: 0vw 1.5vw;
+  padding-top: 1vw;
+  font-size: 9vw;
   color: #000000;
-  text-shadow: 2px 0 #cdcccc, -2px 0 #cdcccc, 0 2px #cdcccc, 0 -2px #cdcccc,
-    1px 1px #cdcccc, -1px -1px #cdcccc, 1px -1px #cdcccc, -1px 1px #cdcccc;
+  text-shadow: 0.1464vw 0 #cdcccc, -0.1464vw 0 #cdcccc, 0 0.1464vw #cdcccc,
+    0 -0.1464vw #cdcccc, 0.0732vw 0.0732vw #cdcccc, -0.0732vw -0.0732vw #cdcccc,
+    0.0732vw -0.0732vw #cdcccc, -0.0732vw 0.0732vw #cdcccc;
+  letter-spacing: 0;
+}
+
+.ls {
+  width: 0.8vw;
 }
 
 .linha-vertical {
   color: #444444;
-  height: 7.5rem;
+  height: 9vw;
   border-left: 2px solid;
 }
 
@@ -195,16 +202,16 @@
 }
 
 .item_menu {
-  padding: 0.25rem 0.7rem;
-  font-size: 1.5rem;
+  padding: 0.25vw 0.7vw;
+  font-size: 1.7vw;
   text-decoration: none;
   color: #ffffff;
   transition: 0.5s;
-  margin: 0 0.4rem;
+  margin: 0vw 0.4vw;
 }
 
 .item_menu:hover {
-  border-radius: 5rem;
+  border-radius: 5vw;
   background-color: #ffffff;
   color: #000000;
   text-decoration: underline;
@@ -331,17 +338,17 @@
 #insta_galeria a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 1rem;
-  margin: 0rem 1rem;
+  font-size: 2vw;
+  margin: 0vw 1vw;
 }
 
 #botoes_galeria button {
   color: #707070;
-  font-size: 2rem;
+  font-size: 3vw;
   background-color: transparent;
   border: 0;
   cursor: pointer;
-  margin: 0rem 0.5rem;
+  margin: 0vw 0.5vw;
   transition: 0.5s;
 }
 
@@ -350,22 +357,22 @@
   transition: 0.5s;
 }
 
-/* #historia {
+#historia {
   background-image: url("img/bg_preto.webp");
   background-size: auto;
   background-color: #000000;
-  font-family: "Bebas Neue", sans-serif;
   letter-spacing: 0.1vw;
   display: flex;
   flex-direction: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   align-content: flex-start;
   padding: 6vw 9vw;
 }
 
 #historia img {
+  margin-top: 5vw;
   width: 30vw;
 }
 
@@ -409,27 +416,9 @@
   font-family: "Oswald", sans-serif;
   font-size: 1.8vw;
   letter-spacing: 0.1vw;
-} */
+}
 
 @media only screen and (max-width: 1024px) {
-  #navbar {
-    padding: 0.9rem 1rem;
-  }
-
-  #brasao {
-    width: 125px;
-  }
-
-  #hoje {
-    font-size: 1.5rem;
-  }
-
-  .item_menu {
-    padding: 0.25rem 0.7rem;
-    font-size: 1.3rem;
-    margin: 0 0.2rem;
-  }
-
   #img5_galeria {
     display: none;
   }
@@ -438,6 +427,7 @@
 @media only screen and (max-width: 768px) {
   #navbar {
     flex-direction: column;
+    letter-spacing: 0.3vw;
   }
 
   #navbar_itens {
@@ -454,6 +444,10 @@
     margin-bottom: -2vw;
     font-size: 10vw;
     font-weight: normal;
+  }
+
+  #hoje p {
+    margin: 0vw 2vw;
   }
 
   #nav_contador div {
@@ -505,19 +499,23 @@
   }
 
   .contador_titulo {
-    line-height: 4vw;
-    font-size: 4vw;
+    line-height: 6vw;
+    font-size: 5vw;
   }
 
   .contador_valor {
-    line-height: 14vw;
-    padding: 0vw 5vw;
-    padding-top: 2vw;
-    font-size: 22vw;
+    line-height: 18vw;
+    padding: 0vw 3vw;
+    padding-top: 3vw;
+    font-size: 27vw;
+  }
+
+  .ls {
+    width: 2vw;
   }
 
   .linha-vertical {
-    height: 23vw;
+    height: 28vw;
   }
 
   .primeira {
@@ -568,11 +566,52 @@
   #img4_galeria {
     display: none;
   }
+
+  #insta_galeria a {
+    font-size: 4vw;
+    margin: 0vw 2vw;
+  }
+
+  #botoes_galeria button {
+    font-size: 7vw;
+    margin: 0vw 1vw;
+  }
+
+  #historia {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 8vw 7vw;
+  }
+
+  #historia img {
+    margin-top: 5vw;
+    width: 80%;
+  }
+
+  .btn_historia {
+    margin-bottom: 2vw;
+  }
+
+  .btn_historia div p {
+    font-size: 3vw;
+  }
+
+  .btn_historia div h3 {
+    font-size: 4vw;
+    letter-spacing: 0.2vw;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   #hamburger {
     display: block;
+  }
+
+  #nav_contador li {
+    margin: 0vw 1vw;
   }
 
   #nav_fixo {
@@ -652,6 +691,11 @@
 
   #topo img {
     width: 70%;
+  }
+
+  #botoes_galeria button {
+    font-size: 10vw;
+    margin: 0vw 2vw;
   }
 
   #img3_galeria,

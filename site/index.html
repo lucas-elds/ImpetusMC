@@ -35,17 +35,17 @@
             <div class="primeira linha-vertical"></div>
             <li>
               <h2 class="contador_titulo"><i class="fa-solid fa-location-dot"></i> DIVISÕES</h2>
-              <h2 class="contador_valor">06</h2>
+              <h2 class="contador_valor">0<div class="ls"></div>6</h2>
             </li>
             <div class="linha-vertical"></div>
             <li>
               <h2 class="contador_titulo"><i class="fa-solid fa-map-location-dot"></i> ESTADOS</h2>
-              <h2 class="contador_valor">04</h2>
+              <h2 class="contador_valor">0<div class="ls"></div>4</h2>
             </li>
             <div class="linha-vertical"></div>
             <li>
               <h2 class="contador_titulo"><i class="fa-solid fa-globe"></i> PAÍSES</h2>
-              <h2 class="contador_valor">02</h2>
+              <h2 class="contador_valor">0<div class="ls"></div>2</h2>
             </li>
           </div>
         </ul>
@@ -53,12 +53,12 @@
           <div id="itens_menu">
             <div class="itens">
               <li><a class="item_menu" href="#sobre">IMPETUS</a></li>
+              <li><a class="item_menu" href="#galeria">GALERIA</a></li>
               <li><a class="item_menu" href="#historia">HISTÓRIA</a></li>
-              <li><a class="item_menu" href="#comando">COMANDO</a></li>
             </div>
             <div class="itens">
               <li><a class="item_menu" href="#divisao">DIVISÕES</a></li>
-              <li><a class="item_menu" href="#galeria">GALERIA</a></li>
+              <li><a class="item_menu" href="#comando">COMANDO</a></li>
               <li><a class="item_menu" href="#contato">CONTATO</a></li>
             </div>
           </div>
@@ -69,15 +69,12 @@
       <a class="opcao_navfixo" onclick="fechaHamburger()" href="#sobre">
         <li>IMPETUS</li>
       </a>
-
+      <a class="opcao_navfixo" onclick="fechaHamburger()" href="#galeria">
+        <li>GALERIA</li>
+      </a>
       <a class="opcao_navfixo" onclick="fechaHamburger()" href="#historia">
         <li>HISTÓRIA</li>
       </a>
-
-      <a class="opcao_navfixo" onclick="fechaHamburger()" href="#comando">
-        <li>COMANDO</li>
-      </a>
-
       <li id="brasao_nav">
         <a href="" style="background-color: transparent">
           <img src="img/brasao.webp" alt="Brasão Impetus MC" />
@@ -86,16 +83,12 @@
           <i class="fa-solid fa-bars"></i>
         </button>
       </li>
-
-
       <a class="opcao_navfixo" onclick="fechaHamburger()" href="#divisao">
         <li>DIVISÕES</li>
       </a>
-
-      <a class="opcao_navfixo" onclick="fechaHamburger()" href="#galeria">
-        <li>GALERIA</li>
+      <a class="opcao_navfixo" onclick="fechaHamburger()" href="#comando">
+        <li>COMANDO</li>
       </a>
-
       <a class="opcao_navfixo" onclick="fechaHamburger()" href="#contato">
         <li>CONTATO</li>
       </a>
@@ -151,7 +144,7 @@
       </ul>
     </section>
 
-    <!-- <section id="historia">
+    <section id="historia">
         <div>
           <div class="titulo_subtitulo">
             <h1 class="titulo">HISTÓRIA</h1>
@@ -186,7 +179,7 @@
                   <p>x</p>
                   <h3>IDEOLOGIA</h3>
                 </div>
-                <p><i class="fa-solid fa-caret-down"></i></p>
+                <p><i class="seta fa-solid fa-caret-down"></i></p>
               </button>
               <div id="ideologia" style="display: none">
                 <p>
@@ -209,7 +202,7 @@
                   <p>x</p>
                   <h3>MISSÃO</h3>
                 </div>
-                <p><i class="fa-solid fa-caret-down"></i></p>
+                <p><i class="seta fa-solid fa-caret-down"></i></p>
               </button>
               <div id="missao" style="display: none">
                 <p>
@@ -232,7 +225,7 @@
           </div>
         </div>
         <img src="img/logo23.webp" alt="Logo Vinte e  Três" />
-      </section> -->
+      </section>
   </main>
   <footer></footer>
   <button onclick="funcaoTopo()" id="botaoTopo" title="Ir para o topo">
