@@ -452,7 +452,7 @@
   }
 
   #nav_contador li {
-    margin: 2vw;
+    margin: 0vw 3vw;
   }
 
   #brasao {
@@ -489,6 +489,10 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin-top: -1rem;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 5rem;
   }
 
   .contador_titulo {
@@ -497,12 +501,12 @@
   }
 
   .contador_valor {
-    font-size: 18vw;
+    font-size: 20vw;
   }
 
   .linha-vertical {
     height: 20vw;
-    margin-bottom: 9vw;
+    margin-bottom: 8vw;
   }
 
   .primeira {
@@ -615,7 +619,7 @@
     padding: 0.5vw 3vw;
     width: 20vw;
     text-align: center;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
   }
 
   .item_menu {
@@ -629,6 +633,10 @@
     color: #ffffff;
     text-decoration: underline;
     transition: 0;
+  }
+
+  #nav_menu {
+    border: 0;
   }
 
   #topo img {
