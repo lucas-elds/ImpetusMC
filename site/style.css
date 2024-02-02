@@ -107,7 +107,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: flex-end;
+  align-items: flex-end;
 }
 
 #nav_contador {
@@ -507,7 +507,7 @@
   }
 
   #navbar_itens {
-    align-content: center;
+    align-items: center;
   }
 
   #nav_contador {
