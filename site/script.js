@@ -72,7 +72,6 @@ for (let i = 1; i <= qntdImg; i++) {
 }
 galeriaCompleta.shift();
 preCarregamento.style.backgroundImage = galeriaCompleta; // Faz um pré carregamento das imagens da galeria
-console.log(galeriaCompleta);
 
 function attGaleria() {
   img1Galeria.style.backgroundImage = `url(${imagem[0]})`;
@@ -121,3 +120,46 @@ function exibirHistoria(i) {
     }
   }
 }
+
+// Mapa:
+
+let mapa = document.getElementById("mapa");
+let bandeira = document.querySelectorAll(".bandeira_cidades");
+let areaBandeiras = document.getElementById("area_bandeiras");
+
+areaBandeiras.addEventListener("mouseout", function () {
+  mapa.style.backgroundImage = "url(img/mapa/fundo_mapa.webp)";
+});
+
+//Paraíba
+bandeira[0].addEventListener("mouseover", function () {
+  mapa.style.backgroundImage = "url(img/mapa/estado_pb.webp)";
+});
+bandeira[1].addEventListener("mouseover", function () {
+  mapa.style.backgroundImage = "url(img/mapa/estado_pb.webp)";
+});
+
+//Pernambuco
+bandeira[2].addEventListener("mouseover", function () {
+  mapa.style.backgroundImage = "url(img/mapa/estado_pe.webp)";
+});
+
+//Sergipe
+bandeira[3].addEventListener("mouseover", function () {
+  mapa.style.backgroundImage = "url(img/mapa/estado_se.webp)";
+});
+
+//Colômbia
+bandeira[4].addEventListener("mouseover", function () {
+  mapa.style.backgroundImage = "none";
+  mapa.src = "img/mapa/mapa_colombia.webp";
+});
+bandeira[4].addEventListener("mouseout", function () {
+  mapa.style.backgroundImage = "none";
+  mapa.src = "img/mapa/mapa_brasil.webp";
+});
+
+//Maranhão
+bandeira[5].addEventListener("mouseover", function () {
+  mapa.style.backgroundImage = "url(img/mapa/estado_ma.webp)";
+});
