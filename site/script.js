@@ -51,7 +51,7 @@ function fechaHamburger() {
       opcaoNavFixo[i].style.display = "none";
     }
     hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
-    brasao.style.marginBottom = "-3.5rem";
+    brasao.style.marginBottom = "-2.5rem";
   }
 }
 
