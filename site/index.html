@@ -21,43 +21,47 @@
         <img id="brasao" src="img/brasao.webp" alt="Brasão Impetus MC" />
       </a>
       <div id="navbar_itens">
-        <ul id="nav_contador">
-          <div>
-            <li>
-              <h1 id="hoje">
-                <p>HOJE</p>
-                <p>NÓS</p>
-                <p>SOMOS</p>
-              </h1>
-            </li>
-          </div>
-          <div id="tabela_contador">
-            <div class="primeira-linha linha-vertical"></div>
+        <a id="cont_divisoes" href="#divisoes">
+          <ul id="nav_contador">
             <div>
               <li>
-                <h2 class="contador_titulo"><i class="fa-solid fa-location-dot"></i> DIVISÕES</h2>
-                <h2 class="contador_valor">0<div class="ls"></div>6</h2>
-              </li>
-              <div class="linha-vertical"></div>
-              <li>
-                <h2 class="contador_titulo"><i class="fa-solid fa-handshake-angle"></i> SUPORTES</h2>
-                <h2 class="contador_valor">0<div class="ls"></div>2</h2>
+                <h1 id="hoje">
+                  <p>HOJE</p>
+                  <p>NÓS</p>
+                  <p>SOMOS</p>
+                </h1>
               </li>
             </div>
-            <div class="linha-vertical"></div>
-            <div>
-              <li>
-                <h2 class="contador_titulo"><i class="fa-solid fa-map-location-dot"></i> ESTADOS</h2>
-                <h2 class="contador_valor">0<div class="ls"></div>4</h2>
-              </li>
+            <div id="tabela_contador">
+              <div class="primeira-linha linha-vertical"></div>
+              <div>
+                <li>
+                  <h2 class="contador_titulo"><i class="fa-solid fa-location-dot"></i> DIVISÕES</h2>
+                  <h2 class="contador_valor">0<div class="ls"></div>6</h2>
+                </li>
+                <div class="linha-vertical"></div>
+                <li>
+                  <h2 class="contador_titulo"><i class="fa-solid fa-road"></i> CIDADES</h2>
+                  <h2 class="contador_valor">0<div class="ls"></div>8</h2>
+                </li>
+              </div>
               <div class="linha-vertical"></div>
-              <li>
-                <h2 class="contador_titulo"><i class="fa-solid fa-globe"></i> PAÍSES</h2>
-                <h2 class="contador_valor">0<div class="ls"></div>2</h2>
-              </li>
+              <div>
+                <li>
+                  <h2 class="contador_titulo"><i class="fa-solid fa-map-location-dot"></i> ESTADOS</h2>
+                  <h2 class="contador_valor">0<div class="ls"></div>4</h2>
+                </li>
+                <div class="linha-vertical"></div>
+                <li>
+                  <h2 class="contador_titulo"><i class="fa-solid fa-globe"></i> PAÍSES</h2>
+                  <h2 class="contador_valor">0<div class="ls"></div>2</h2>
+                </li>
+              </div>
             </div>
-          </div>
-        </ul>
+          </ul>
+        </a>
+
+        
         <ul id="nav_menu">
           <div id="itens_menu">
             <div class="itens">
@@ -131,6 +135,7 @@
           para o bom convívio em nossa irmandade.
         </p>
       </div>
+      <a href="#historia">Ler mais</a>
     </section>
     <section id="galeria">
       <ul id="imgs_galeria">
@@ -235,7 +240,6 @@
         </div>
         <img src="img/logo23.webp" alt="Logo Vinte e  Três" />
       </section>
-
       <section id="divisoes">
         <div class="mapa_bandeiras">
           <div class="titulo_subtitulo">
@@ -265,7 +269,6 @@
                 </li>
               </ul>
             </li>
-
             <li class="mat_div_sup">
               <h1><i class="fa-solid fa-map-location-dot"></i> DIVISÃO</h1>
               <ul class="estados_cidades">
@@ -281,7 +284,6 @@
                     </li>
                   </ul>
                 </li>
-
                 <li>
                   <ul class="bandeira_cidades">
                     <li>
@@ -294,7 +296,6 @@
                     </li>
                   </ul>
                 </li>
-
                 <li>
                   <ul class="bandeira_cidades">
                     <li>
@@ -308,7 +309,6 @@
                 </li>
               </ul>
             </li>
-
             <li class="mat_div_sup">
               <h1><i class="fa-solid fa-handshake-angle"></i> SUPORTE</h1>
               <ul class="estados_cidades">
@@ -336,9 +336,9 @@
                 </li>
               </ul>
             </li>
-        
         </div>
       </section>
+      <section id="comando"></section>
   </main>
   <footer></footer>
   <button onclick="funcaoTopo()" id="botaoTopo" title="Ir para o topo">

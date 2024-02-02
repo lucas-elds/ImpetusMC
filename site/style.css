@@ -110,6 +110,12 @@
   align-items: flex-end;
 }
 
+#cont_divisoes {
+  text-decoration: none;
+  color: #ffffff;
+  overflow: hidden;
+}
+
 #nav_contador {
   list-style: none;
   display: flex;
@@ -220,7 +226,8 @@
 
 #topo {
   width: 100%;
-  background-image: url("img/background.webp");
+  background-color: #000000;
+  background-image: url("img/background/bg_topo.webp");
   background-size: 100% 100%;
   text-align: center;
   filter: contrast(1.1);
@@ -232,7 +239,7 @@
 }
 
 #sobre {
-  background-image: url("img/sobre.webp");
+  background-image: url("img/background/bg_sobre.webp");
   background-repeat: no-repeat;
   background-position: left;
   background-size: auto 100%;
@@ -244,6 +251,14 @@
   align-items: center;
   align-content: flex-end;
   padding: 8vw 7vw;
+}
+
+#sobre a {
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  align-self: flex-end;
+  font-size: 1.5vw;
 }
 
 .titulo_subtitulo {
@@ -338,8 +353,9 @@
 #insta_galeria a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin: 0vw 1vw;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #botoes_galeria button {
@@ -358,7 +374,7 @@
 }
 
 #historia {
-  background-image: url("img/bg_preto.webp");
+  background-image: url("img/background/bg_preto.webp");
   background-size: auto;
   background-color: #000000;
   letter-spacing: 0.1vw;
@@ -420,7 +436,8 @@
 
 #divisoes {
   font-family: "Oswald", sans-serif;
-  background-image: url("img/bg_preto.webp");
+  background-color: #000000;
+  background-image: url("img/background/bg_preto.webp");
   background-size: auto;
   display: flex;
   flex-direction: row;
@@ -492,6 +509,11 @@
 
 .bandeira_cidades li {
   padding: 0.5vw 0vw;
+  cursor: pointer;
+}
+
+#comando {
+  background-image: url("img/background/bg_comando.webp");
 }
 
 @media only screen and (max-width: 1024px) {
@@ -582,7 +604,7 @@
 
   .contador_valor {
     line-height: 14vw;
-    padding: 0vw 3vw;
+    padding: 0vw 2.5vw;
     padding-top: 2vw;
     font-size: 20vw;
   }
@@ -607,6 +629,10 @@
 
   #sobre {
     align-content: center;
+  }
+
+  #sobre a {
+    font-size: 4vw;
   }
 
   .titulo {
@@ -753,7 +779,7 @@
   }
 
   .mat_div_sup h3 {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 
   .bandeira {
