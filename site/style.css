@@ -565,7 +565,6 @@
 .cargo_img {
   width: 15vw;
   height: 19vw;
-  /* background-image: url("img/comando/cargo.webp"); */
   background-image: url("img/comando/cargo.webp");
   background-position: center center;
   background-size: cover;

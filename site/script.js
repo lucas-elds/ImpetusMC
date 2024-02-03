@@ -163,3 +163,12 @@ bandeira[4].addEventListener("mouseout", function () {
 bandeira[5].addEventListener("mouseover", function () {
   mapa.style.backgroundImage = "url(img/mapa/estado_ma.webp)";
 });
+
+//Comando:
+
+let cargos = document.querySelectorAll(".cargo_img");
+cargos[0].style.backgroundImage = "url(img/comando/cargo.webp)";
+cargos[1].style.backgroundImage = "url(img/comando/cargo.webp)";
+cargos[2].style.backgroundImage = "url(img/comando/cargo.webp)";
+cargos[3].style.backgroundImage = "url(img/comando/cargo.webp)";
+cargos[4].style.backgroundImage = "url(img/comando/cargo.webp)";
