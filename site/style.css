@@ -565,12 +565,12 @@
 .cargo_img {
   width: 15vw;
   height: 19vw;
-  background-image: url("img/comando/cargo.webp");
   background-position: center center;
   background-size: cover;
   border-radius: 10vw;
   filter: grayscale(100%);
   margin-bottom: 1vw;
+  background-color: #444444;
 }
 
 @media only screen and (max-width: 1024px) {

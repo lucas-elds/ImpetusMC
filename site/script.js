@@ -167,8 +167,8 @@ bandeira[5].addEventListener("mouseover", function () {
 //Comando:
 
 let cargos = document.querySelectorAll(".cargo_img");
-cargos[0].style.backgroundImage = "url(img/comando/cargo.webp)";
-cargos[1].style.backgroundImage = "url(img/comando/cargo.webp)";
-cargos[2].style.backgroundImage = "url(img/comando/cargo.webp)";
-cargos[3].style.backgroundImage = "url(img/comando/cargo.webp)";
-cargos[4].style.backgroundImage = "url(img/comando/cargo.webp)";
+cargos[0].style.backgroundImage = "url(img/comando/presidente.webp)";
+cargos[1].style.backgroundImage = "url(img/comando/vicepresidente.webp)";
+cargos[2].style.backgroundImage = "url(img/comando/secretario.webp)";
+cargos[3].style.backgroundImage = "url(img/comando/tesoureiro.webp)";
+cargos[4].style.backgroundImage = "url(img/comando/disciplinador.webp)";
