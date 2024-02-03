@@ -516,7 +516,62 @@
   background-image: url("img/background/bg_comando.webp");
   background-size: cover;
   background-position: center center;
-  color: #ffffff;
+  color: #8e8e8e;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 3vw 0;
+}
+
+#quadro_comando {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.1vw;
+  margin-top: 4vw;
+}
+
+#quadro_comando .subtitulo_deco {
+  margin: 0;
+  color: #8e8e8e;
+  letter-spacing: 0;
+}
+
+.cargos {
+  display: flex;
+}
+
+.cargos li {
+  margin: 0vw 1vw;
+  width: 20vw;
+  height: 28vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 1.2vw;
+}
+
+.cargo_img {
+  width: 15vw;
+  height: 19vw;
+  /* background-image: url("img/comando/cargo.webp"); */
+  background-image: url("img/comando/cargo.webp");
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10vw;
+  filter: grayscale(100%);
+  margin-bottom: 1vw;
 }
 
 @media only screen and (max-width: 1024px) {
