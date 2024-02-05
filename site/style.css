@@ -259,6 +259,8 @@
   text-decoration: none;
   align-self: flex-end;
   font-size: 1.5vw;
+  width: 5vw;
+  text-align: center;
 }
 
 .titulo_subtitulo {
