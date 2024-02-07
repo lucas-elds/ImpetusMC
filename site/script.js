@@ -122,46 +122,74 @@ function exibirHistoria(i) {
 }
 
 // Mapa:
+const description = document.querySelector(".tooltip");
+
+document.querySelectorAll("path").forEach((el) =>
+  el.addEventListener("mouseover", (event) => {
+    event.target.className = "enabled";
+    if (el.classList == "divisao") {
+      description.classList.add("active");
+      description.innerHTML = el.id;
+    }
+  })
+);
+
+document.querySelectorAll("path").forEach((el) =>
+  el.addEventListener("mouseout", () => {
+    description.classList.remove("active");
+  })
+);
+
+document.onmousemove = function (e) {
+  description.style.left = e.pageX + "px";
+  description.style.top = e.pageY - 70 + "px";
+};
 
 let mapa = document.getElementById("mapa");
 let bandeira = document.querySelectorAll(".bandeira_cidades");
-let areaBandeiras = document.getElementById("area_bandeiras");
-
-areaBandeiras.addEventListener("mouseout", function () {
-  mapa.style.backgroundImage = "url(img/mapa/fundo_mapa.webp)";
-});
+let estado = document.querySelectorAll("path");
 
 //Paraíba
-bandeira[0].addEventListener("mouseover", function () {
-  mapa.style.backgroundImage = "url(img/mapa/estado_pb.webp)";
-});
-bandeira[1].addEventListener("mouseover", function () {
-  mapa.style.backgroundImage = "url(img/mapa/estado_pb.webp)";
+estado[14].addEventListener("mouseover", function () {
+  description.innerHTML = `
+  <img src="img/bandeiras/paraiba.webp" alt="Bandeira da Paraíba">
+  <h1>Paraíba</h1>
+  <h2><i class="fa-solid fa-house"></i>Matriz:</h2>
+  <p>João Pessoa</p>
+  <h2><i class="fa-solid fa-map-location-dot"></i>Divisão:</h2>
+  <p>Campina Grande</p>
+  <p>Solânea</p>`;
 });
 
 //Pernambuco
-bandeira[2].addEventListener("mouseover", function () {
-  mapa.style.backgroundImage = "url(img/mapa/estado_pe.webp)";
+estado[16].addEventListener("mouseover", function () {
+  description.innerHTML = `
+  <img src="img/bandeiras/pernambuco.webp" alt="Bandeira de Pernambuco">
+  <h1>Pernambuco</h1>
+  <h2><i class="fa-solid fa-map-location-dot"></i>Divisão:</h2>
+  <p>Garanhuns</p>
+  <p>Olinda</p>`;
 });
 
 //Sergipe
-bandeira[3].addEventListener("mouseover", function () {
-  mapa.style.backgroundImage = "url(img/mapa/estado_se.webp)";
-});
-
-//Colômbia
-bandeira[4].addEventListener("mouseover", function () {
-  mapa.style.backgroundImage = "none";
-  mapa.src = "img/mapa/mapa_colombia.webp";
-});
-bandeira[4].addEventListener("mouseout", function () {
-  mapa.style.backgroundImage = "none";
-  mapa.src = "img/mapa/mapa_brasil.webp";
+estado[25].addEventListener("mouseover", function () {
+  description.innerHTML = `
+  <img src="img/bandeiras/sergipe.webp" alt="Bandeira de Sergipe">
+  <h1>Sergipe</h1>
+  <h2><i class="fa-solid fa-map-location-dot"></i>Divisão:</h2>
+  <p>Aracajú</p>
+  <h2><i class="fa-solid fa-handshake-angle"></i>Suporte:</h2>
+  <p>Itabaiana</p>
+  <p>Socorro</p>`;
 });
 
 //Maranhão
-bandeira[5].addEventListener("mouseover", function () {
-  mapa.style.backgroundImage = "url(img/mapa/estado_ma.webp)";
+estado[9].addEventListener("mouseover", function () {
+  description.innerHTML = `
+  <img src="img/bandeiras/maranhao.webp" alt="Bandeira do Maranhão">
+  <h1>Maranhão</h1>
+  <h2><i class="fa-solid fa-map-location-dot"></i>Divisão:</h2>
+  <p>Aracajú</p>`;
 });
 
 //Comando:
