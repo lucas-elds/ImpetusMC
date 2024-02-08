@@ -464,6 +464,11 @@
   background-size: cover;
 }
 
+.divisao {
+  fill: rgba(255, 255, 255, 0.3);
+  transition: fill 0.4s;
+}
+
 .divisao:hover {
   fill: rgb(255, 255, 255, 0.7);
   transition: fill 0.4s;
