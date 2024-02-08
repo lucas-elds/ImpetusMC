@@ -475,7 +475,7 @@
           </li>
           <li>
             <div class="cargo_img"></div>
-            <h1>NOME</h1>
+            <h1>SHINZO</h1>
             <h2>VICE-PRESIDENTE</h2>
             <p class="subtitulo_deco">x x x</p>
           </li>
@@ -514,14 +514,14 @@
           <li><p class="subtitulo_deco">x</p><h1>OU</h1><p class="subtitulo_deco">x</p></li>
           <li><p class="subtitulo_deco">x</p><h1>SUMA</h1><p class="subtitulo_deco">x</p></li>
         </ul>
-        <ul id="campos_contato">
+        <form id="campos_contato" onsubmit="whatsapp()">
           <li><h1>CONTATO</h1></li>
           <li>
-            <input id="wppNome" type="text" placeholder="Nome"/>
+            <input id="wppNome" type="text" placeholder="Nome" required/>
           </li>
           <li>
-            <select id="wppDivisao">
-              <option value="">Divisão de interesse</option>
+            <select id="wppDivisao" required>
+              <option disabled selected value>Divisão de interesse</option>
               <option value="5583988989405">João Pessoa - PB</option>
               <option value="5583991258122">Campina Grande - PB</option>
               <option value="5583991767177">Solânea - PB</option>
@@ -531,15 +531,15 @@
             </select>
           </li>
           <li>
-            <input id="wppAssunto" type="text" placeholder="Assunto"/>
+            <input id="wppAssunto" type="text" placeholder="Assunto" required/>
           </li>
           <li>
-            <textarea id="wppMensagem" placeholder="Mensagem"></textarea> 
+            <textarea id="wppMensagem" placeholder="Mensagem" required></textarea> 
           </li>
           <li>
-            <button onclick="whatsapp()"><i class="fa-brands fa-whatsapp"></i>Enviar</button>
+            <button><i class="fa-brands fa-whatsapp"></i>Enviar</button>
           </li>
-        </ul>
+        </form>
       </div>
       <div id="contato_mais">
         <li>
@@ -554,7 +554,37 @@
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <ul>
+      <li id="imgs_footer">
+        <div class="img_footer"></div>
+        <div class="img_footer"></div>
+        <div class="img_footer"></div>
+        <div class="img_footer"></div>
+      </li>
+      <li id="logo_footer">
+        <img src="img/imp_mc.webp" alt="Logo IMP MC">
+      </li>
+      <li id="info_footer">
+        <div>
+          <p>
+            TODOS OS DIREITOS RESERVADOS
+          </p>
+        </div>
+        <img src="img/brasao.webp" alt="Brasão Impetus MC">
+        <div>
+          <p>
+            23.01.2021
+          </p>
+          <p>
+            VEJA MAIS
+            <a href="https://www.instagram.com/impetusmc/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/hashtag/impetusmc" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
+          </p>
+        </div>
+      </li>
+    </ul>
+  </footer>
   <button onclick="funcaoTopo()" id="botaoTopo" title="Ir para o topo">
     <i class="fa-solid fa-arrow-up"></i>
   </button>

@@ -211,13 +211,21 @@ cargos[4].style.backgroundImage = "url(img/comando/disciplinador.webp)";
 //Contato:
 
 function whatsapp() {
-  let numero = document.getElementById("wppDivisao").value;
-  let nome = document.getElementById("wppNome").value;
-  let assunto = document.getElementById("wppAssunto").value;
-  let mensagem = document.getElementById("wppMensagem").value;
+  let numero = document.getElementById("wppDivisao").value.trim();
+  let nome = document.getElementById("wppNome").value.trim();
+  let assunto = document.getElementById("wppAssunto").value.trim();
+  let mensagem = document.getElementById("wppMensagem").value.trim();
 
   window.open(
     `https://wa.me/${numero}?text=Olá, eu me chamo *${nome}* e gostaria de falar a respeito do *Impetus M.C.* sobre: *${assunto}*%0A%0A${mensagem}`,
     '_blank rel="noopener noreferrer"'
   );
 }
+
+//Footer:
+
+let imgFooter = document.querySelectorAll(".img_footer");
+imgFooter[0].style.backgroundImage = "url(img/footer/footer1.webp)";
+imgFooter[1].style.backgroundImage = "url(img/footer/footer2.webp)";
+imgFooter[2].style.backgroundImage = "url(img/footer/footer3.webp)";
+imgFooter[3].style.backgroundImage = "url(img/footer/footer4.webp)";
