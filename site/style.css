@@ -316,6 +316,11 @@
   margin: 1.5vw 0vw;
 }
 
+#galeria {
+  padding-top: 6vw;
+  margin-top: -6vw;
+}
+
 #imgs_galeria {
   width: 100%;
   filter: grayscale(100%);
@@ -471,6 +476,28 @@ path {
   stroke-width: 2px;
 }
 
+#mundo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: #ffffff;
+  font-size: 1.5vw;
+  align-self: flex-end;
+  margin-top: 3vw;
+  margin-bottom: -6vw;
+  z-index: 1;
+  border: 2px solid #b9b9b9;
+  border-radius: 0.5vw;
+  padding: 0.2vw 0.5vw;
+}
+
+#mundo i {
+  margin-right: 0.2vw;
+}
+
 .tooltip {
   min-width: 13vw;
   pointer-events: none;
@@ -478,7 +505,7 @@ path {
   font-size: 18px;
   text-align: center;
   background: #ffffff;
-  padding: 0.8vw 1vw;
+  padding: 0.5vw 1vw;
   z-index: 5;
   margin: 0;
   color: #000000;
@@ -489,6 +516,7 @@ path {
 }
 
 .tooltip img {
+  margin-top: 0.5vw;
   width: 6vw;
   border: 1px solid #000000;
 }
@@ -606,7 +634,7 @@ path {
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 3vw 0;
+  padding: 7vw 0;
 }
 
 #quadro_comando {
@@ -626,6 +654,7 @@ path {
   margin: 0;
   color: #8e8e8e;
   letter-spacing: 0;
+  font-size: 1.3vw;
 }
 
 .cargos {
@@ -642,7 +671,15 @@ path {
   justify-content: center;
   align-items: center;
   align-content: center;
-  font-size: 1.2vw;
+}
+
+.cargos h1 {
+  color: #ffffff;
+  font-size: 1.8vw;
+}
+
+.cargos h2 {
+  font-size: 1.5vw;
 }
 
 .cargo_img {
@@ -654,6 +691,173 @@ path {
   filter: grayscale(100%);
   margin-bottom: 1vw;
   background-color: #444444;
+}
+
+#wallpaper {
+  width: 100%;
+  background-color: #000000;
+  background-image: url("img/background/bg_wallpaper.webp");
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+}
+
+#wallpaper img {
+  width: 23%;
+  padding: 7vw 0vw;
+}
+
+#contato div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#contato {
+  background-image: url("img/background/bg_branco.webp");
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 6vw 0vw;
+}
+
+#contato .titulo {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+#contato .titulo li {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000,
+    1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+}
+
+#contato .titulo h1 {
+  color: #eeeeee;
+  font-family: "Oswald", sans-serif;
+  font-size: 5vw;
+  letter-spacing: 0.3vw;
+  line-height: 6vw;
+}
+
+#contato .subtitulo_deco {
+  color: #eeeeee;
+  font-size: 3vw;
+  margin: 0vw 1vw;
+}
+
+#campos_contato {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+}
+
+#campos_contato h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3vw;
+}
+
+#campos_contato li {
+  width: 70%;
+  margin: 0.4vw 0vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#campos_contato ::placeholder {
+  color: #444444;
+  opacity: 1;
+}
+
+#campos_contato input,
+#campos_contato select,
+#wppMensagem {
+  background-color: #eeeeee;
+  border: 2px solid #8e8e8e;
+  border-radius: 0.5vw;
+  color: #444444;
+}
+
+#campos_contato input {
+  padding: 0.3vw 0.5vw;
+  width: 96.7%;
+}
+
+#campos_contato select {
+  padding: 0.3vw 0.5vw;
+  width: 100%;
+}
+
+#wppMensagem {
+  height: 8vw;
+  padding: 0.5vw 0.5vw;
+  width: 96.7%;
+  resize: none;
+}
+
+#campos_contato input:focus,
+#campos_contato select:focus,
+#wppMensagem:focus {
+  border: #000000 solid 2px;
+  outline: none;
+}
+
+#campos_contato button {
+  padding: 0.2vw 1.5vw;
+  font-size: 1.5vw;
+  color: #ffffff;
+  background-color: #25d366;
+  border: 2px solid #8e8e8e;
+  border-radius: 5vw;
+  cursor: pointer;
+}
+
+#campos_contato button i {
+  margin-right: 0.3vw;
+}
+
+#contato_mais {
+  width: 100%;
+  margin-top: 5vw;
+}
+
+#contato_mais li {
+  letter-spacing: 0.1vw;
+  color: #000000;
+  font-size: 1.4vw;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  width: 8%;
+}
+
+#contato_mais li a {
+  color: #000000;
+  font-size: 1.8vw;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -769,6 +973,7 @@ path {
 
   #sobre {
     align-content: center;
+    padding: 15vw 7vw;
   }
 
   #sobre a {
@@ -807,6 +1012,11 @@ path {
     margin: 4vw 0vw;
   }
 
+  #galeria {
+    padding-top: 16vw;
+    margin-top: -16vw;
+  }
+
   #img4_galeria {
     display: none;
   }
@@ -827,7 +1037,7 @@ path {
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    padding: 8vw 7vw;
+    padding: 15vw 7vw;
   }
 
   #historia .texto {
@@ -855,10 +1065,22 @@ path {
   #divisoes {
     flex-direction: column;
     align-items: center;
+    padding: 15vw 0vw;
   }
 
   #mapa {
     width: 95%;
+  }
+
+  #mundo {
+    font-size: 5vw;
+    border-radius: 1vw;
+    padding: 0.3vw 1vw;
+    border-width: 1px;
+  }
+
+  #mundo i {
+    margin-right: 0.5vw;
   }
 
   .tooltip {
@@ -870,6 +1092,7 @@ path {
 
   .tooltip img {
     width: 15vw;
+    margin-top: 1vw;
   }
 
   .tooltip h1 {
@@ -961,6 +1184,35 @@ path {
     height: 19vw;
     margin: 0.8vw 1vw;
     border: 1px solid #8e8e8e;
+  }
+
+  #comando {
+    padding: 15vw 0;
+  }
+
+  #quadro_comando .subtitulo_deco {
+    font-size: 2vw;
+  }
+
+  .cargos li {
+    margin: 0vw 1vw;
+    width: 30vw;
+    height: 50vw;
+  }
+
+  .cargos h1 {
+    font-size: 3.2vw;
+  }
+
+  .cargos h2 {
+    font-size: 3vw;
+  }
+
+  .cargo_img {
+    width: 25vw;
+    height: 31vw;
+    border-radius: 15vw;
+    margin-bottom: 1vw;
   }
 }
 
@@ -1110,5 +1362,43 @@ path {
 
   .tooltip p {
     font-size: 5.5vw;
+  }
+
+  #quadro_comando {
+    width: 100%;
+  }
+
+  .cargos {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cargos li {
+    margin: 4vw 0vw;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cargos h1 {
+    font-size: 7vw;
+  }
+
+  .cargos h2 {
+    font-size: 6.5vw;
+  }
+
+  #quadro_comando .subtitulo_deco {
+    font-size: 4vw;
+  }
+
+  .cargo_img {
+    width: 55vw;
+    height: 70vw;
+    border-radius: 35vw;
+    margin-bottom: 1vw;
+  }
+
+  #wallpaper img {
+    width: 35%;
   }
 }

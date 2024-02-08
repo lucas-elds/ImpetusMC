@@ -126,10 +126,8 @@ const description = document.querySelector(".tooltip");
 
 document.querySelectorAll("path").forEach((el) =>
   el.addEventListener("mouseover", (event) => {
-    event.target.className = "enabled";
     if (el.classList == "divisao") {
       description.classList.add("active");
-      description.innerHTML = el.id;
     }
   })
 );
@@ -150,7 +148,7 @@ let bandeira = document.querySelectorAll(".bandeira_cidades");
 let estado = document.querySelectorAll("path");
 
 //Paraíba
-estado[14].addEventListener("mouseover", function () {
+estado[15].addEventListener("mouseover", function () {
   description.innerHTML = `
   <img src="img/bandeiras/paraiba.webp" alt="Bandeira da Paraíba">
   <h1>Paraíba</h1>
@@ -162,7 +160,7 @@ estado[14].addEventListener("mouseover", function () {
 });
 
 //Pernambuco
-estado[16].addEventListener("mouseover", function () {
+estado[17].addEventListener("mouseover", function () {
   description.innerHTML = `
   <img src="img/bandeiras/pernambuco.webp" alt="Bandeira de Pernambuco">
   <h1>Pernambuco</h1>
@@ -172,7 +170,7 @@ estado[16].addEventListener("mouseover", function () {
 });
 
 //Sergipe
-estado[25].addEventListener("mouseover", function () {
+estado[26].addEventListener("mouseover", function () {
   description.innerHTML = `
   <img src="img/bandeiras/sergipe.webp" alt="Bandeira de Sergipe">
   <h1>Sergipe</h1>
@@ -184,12 +182,21 @@ estado[25].addEventListener("mouseover", function () {
 });
 
 //Maranhão
-estado[9].addEventListener("mouseover", function () {
+estado[10].addEventListener("mouseover", function () {
   description.innerHTML = `
   <img src="img/bandeiras/maranhao.webp" alt="Bandeira do Maranhão">
   <h1>Maranhão</h1>
   <h2><i class="fa-solid fa-map-location-dot"></i>Divisão:</h2>
   <p>Aracajú</p>`;
+});
+
+//Mundo
+estado[0].addEventListener("mouseover", function () {
+  description.innerHTML = `
+  <h1>Exterior</h1>
+  <img src="img/bandeiras/colombia.webp" alt="Bandeira da Colômbia">
+  <h2>Colômbia</h2>
+  <p>Medellín</p>`;
 });
 
 //Comando:
@@ -200,3 +207,17 @@ cargos[1].style.backgroundImage = "url(img/comando/vicepresidente.webp)";
 cargos[2].style.backgroundImage = "url(img/comando/secretario.webp)";
 cargos[3].style.backgroundImage = "url(img/comando/tesoureiro.webp)";
 cargos[4].style.backgroundImage = "url(img/comando/disciplinador.webp)";
+
+//Contato:
+
+function whatsapp() {
+  let numero = document.getElementById("wppDivisao").value;
+  let nome = document.getElementById("wppNome").value;
+  let assunto = document.getElementById("wppAssunto").value;
+  let mensagem = document.getElementById("wppMensagem").value;
+
+  window.open(
+    `https://wa.me/${numero}?text=Olá, eu me chamo *${nome}* e gostaria de falar a respeito do *Impetus M.C.* sobre: *${assunto}*%0A%0A${mensagem}`,
+    '_blank rel="noopener noreferrer"'
+  );
+}
