@@ -46,7 +46,7 @@ function clickHamburger() {
 }
 
 function fechaHamburger() {
-  if (screen.width <= 480) {
+  if (screen.width <= 768) {
     for (let i = 0; i < opcaoNavFixo.length; i++) {
       opcaoNavFixo[i].style.display = "none";
     }
