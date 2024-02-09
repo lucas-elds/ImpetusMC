@@ -1286,7 +1286,6 @@ footer ul {
   }
 
   .cargos li {
-    margin: 0vw 1vw;
     width: 30vw;
     height: 50vw;
   }
@@ -1573,40 +1572,6 @@ footer ul {
 
   .tooltip p {
     font-size: 5.5vw;
-  }
-
-  #quadro_comando {
-    width: 100%;
-  }
-
-  .cargos {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .cargos li {
-    margin: 4vw 0vw;
-    width: 100%;
-    height: 100%;
-  }
-
-  .cargos h1 {
-    font-size: 6.5vw;
-  }
-
-  .cargos h2 {
-    font-size: 6vw;
-  }
-
-  #quadro_comando .subtitulo_deco {
-    font-size: 4vw;
-  }
-
-  .cargo_img {
-    width: 50vw;
-    height: 65vw;
-    border-radius: 35vw;
-    margin-bottom: 1vw;
   }
 
   #wallpaper img {
