@@ -1559,3 +1559,395 @@ footer ul {
     width: 35%;
   }
 }
+
+@media only screen and (min-width: 1441px) {
+  #navbar {
+    letter-spacing: 2px;
+    padding: 10px 100px;
+  }
+
+  #nav_fixo {
+    font-size: 21px;
+  }
+
+  .opcao_navfixo {
+    margin: 0px 14px;
+  }
+
+  .opcao_navfixo li {
+    width: 120px;
+    border-radius: 20px;
+  }
+
+  #brasao_nav img {
+    width: 100px;
+    padding: 6px;
+    margin-bottom: -50px;
+    border-radius: 100px;
+  }
+
+  #brasao {
+    width: 185px;
+  }
+
+  #nav_contador h2 {
+    margin: 1.5px 0px;
+  }
+
+  #nav_menu {
+    margin-top: 40px;
+  }
+
+  #hoje {
+    font-size: 28px;
+    padding: 0px 14px;
+  }
+
+  #hoje p {
+    margin: 0px 4px;
+  }
+
+  .contador_titulo {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  .contador_valor {
+    line-height: 95px;
+    padding: 0vw 21px;
+    padding-top: 14px;
+    font-size: 130px;
+    text-shadow: 2px 0 #cdcccc, -2px 0 #cdcccc, 0 2px #cdcccc, 0 -2px #cdcccc,
+      1px 1px #cdcccc, -1px -1px #cdcccc, 1px -1px #cdcccc, -1px 1px #cdcccc;
+  }
+
+  .ls {
+    width: 11px;
+  }
+
+  .linha-vertical {
+    height: 130px;
+  }
+
+  .item_menu {
+    padding: 4px 10px;
+    font-size: 25px;
+    margin: 0px 10px;
+  }
+
+  .item_menu:hover {
+    border-radius: 50px;
+  }
+
+  #topo img {
+    width: 500px;
+    padding: 72px 0px;
+  }
+
+  #sobre {
+    padding: 115px 100px;
+  }
+
+  #sobre a {
+    font-size: 22px;
+    width: 85px;
+  }
+
+  .titulo {
+    font-size: 145px;
+    letter-spacing: 5px;
+  }
+
+  .subtitulo {
+    font-size: 18px;
+    margin-top: -43px;
+    margin-left: -140px;
+  }
+
+  .subtitulo_deco {
+    font-size: 20px;
+    margin: 11px 25px;
+    letter-spacing: 3px;
+  }
+
+  .texto {
+    font-size: 18px;
+    line-height: 25px;
+    text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000,
+      1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+  }
+
+  .texto p {
+    margin: 21px 0px;
+  }
+
+  #galeria {
+    padding-top: 115px;
+    margin-top: -115px;
+  }
+
+  #insta_galeria a {
+    font-size: 21px;
+    margin: 0px 14px;
+  }
+
+  #botoes_galeria button {
+    font-size: 45px;
+    margin: 0px 7px;
+  }
+
+  #historia {
+    letter-spacing: 1px;
+    padding: 86px 100px;
+  }
+
+  #historia img {
+    margin-top: 75px;
+    width: 365px;
+  }
+
+  #historia .texto {
+    width: 80%;
+  }
+
+  .btn_historia {
+    width: 70%;
+    margin-bottom: 28px;
+  }
+
+  .btn_historia div p {
+    font-size: 20px;
+    margin-right: 28px;
+  }
+
+  .btn_historia div h3 {
+    font-size: 26px;
+    letter-spacing: 1.5px;
+  }
+
+  #divisoes {
+    padding: 86px 0px;
+    letter-spacing: 1.5px;
+  }
+
+  #mapa {
+    width: 600px;
+    margin: 28px 0px;
+  }
+
+  #mundo {
+    font-size: 21px;
+    margin-top: 43px;
+    margin-bottom: -86px;
+    border-radius: 7px;
+    padding: 3px 7.5px;
+  }
+
+  #mundo i {
+    margin-right: 2.5px;
+  }
+
+  .tooltip {
+    min-width: 190px;
+    padding: 7px 14px;
+  }
+
+  .tooltip img {
+    margin-top: 7px;
+    width: 87px;
+  }
+
+  .tooltip h1 {
+    font-size: 26px;
+    padding: 0px 14px;
+  }
+
+  .tooltip h2 {
+    font-size: 21px;
+  }
+
+  .tooltip i {
+    font-size: 20px;
+    margin-right: 3.5px;
+  }
+
+  .tooltip p {
+    font-size: 19px;
+    letter-spacing: 0.8px;
+  }
+
+  .mapa_bandeiras {
+    width: 575px;
+  }
+
+  .mat_div_sup {
+    padding: 7px 0px;
+  }
+
+  .mat_div_sup i {
+    font-size: 28px;
+    margin-right: 7px;
+  }
+
+  .mat_div_sup h1 {
+    font-size: 36px;
+  }
+
+  .mat_div_sup h2 {
+    font-size: 31px;
+  }
+
+  .mat_div_sup h3 {
+    font-size: 17px;
+  }
+
+  .bandeira {
+    width: 80px;
+    height: 57px;
+    margin: 11.5px 14.5px;
+  }
+
+  .bandeira_cidades li {
+    padding: 7px 0px;
+  }
+
+  #comando {
+    padding: 100px 0px;
+  }
+
+  #quadro_comando {
+    letter-spacing: 1.5px;
+    margin-top: 57px;
+  }
+
+  #quadro_comando .subtitulo_deco {
+    font-size: 19px;
+  }
+
+  .cargos li {
+    margin: 0px 14px;
+    width: 290px;
+    height: 400px;
+  }
+
+  .cargos h1 {
+    font-size: 26px;
+  }
+
+  .cargos h2 {
+    font-size: 21.5px;
+  }
+
+  .cargo_img {
+    width: 215px;
+    height: 270px;
+    border-radius: 145px;
+    margin-bottom: 14px;
+  }
+
+  #wallpaper img {
+    width: 330px;
+    padding: 100px 0px;
+  }
+
+  #contato {
+    padding: 85px 0px;
+  }
+
+  #contato .titulo h1 {
+    font-size: 73px;
+    letter-spacing: 4.3px;
+    line-height: 86px;
+  }
+
+  #contato .subtitulo_deco {
+    font-size: 43px;
+    margin: 0px 14px;
+  }
+
+  #campos_contato h1 {
+    font-size: 57px;
+  }
+
+  #campos_contato li {
+    margin: 7px 0px;
+  }
+
+  #campos_contato input,
+  #campos_contato select,
+  #wppMensagem {
+    border-radius: 7px;
+    font-size: 14px;
+  }
+
+  #campos_contato input {
+    padding: 4.3px 7.2px;
+  }
+
+  #campos_contato select {
+    padding: 4.3px 3.2px;
+  }
+
+  #wppMensagem {
+    height: 145px;
+    padding: 7.2px;
+  }
+
+  #campos_contato button {
+    letter-spacing: 1.4px;
+    padding: 3px 21px;
+    font-size: 21px;
+    border-radius: 20px;
+  }
+
+  #campos_contato button i {
+    margin-right: 4px;
+  }
+
+  #contato_mais {
+    margin-top: 72px;
+  }
+
+  #contato_mais li {
+    letter-spacing: 1.5px;
+    font-size: 23px;
+  }
+
+  #contato_mais li a {
+    font-size: 29px;
+  }
+
+  footer {
+    padding-bottom: 72px;
+  }
+
+  #imgs_footer div {
+    height: 290px;
+  }
+
+  #logo_footer {
+    margin-top: 115px;
+    margin-bottom: 29px;
+  }
+
+  #logo_footer img {
+    width: 1000px;
+  }
+
+  #info_footer div {
+    font-size: 26px;
+    width: 500px;
+  }
+
+  #info_footer div p {
+    margin: 0px 14px;
+  }
+
+  #info_footer div i {
+    font-size: 28px;
+  }
+
+  #info_footer img {
+    width: 145px;
+  }
+}
